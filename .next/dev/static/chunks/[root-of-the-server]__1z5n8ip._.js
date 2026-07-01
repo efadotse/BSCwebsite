@@ -796,8 +796,10 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/jsx-dev-runtime.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 function BentoSlideshow({ projects = [] }) {
     _s();
@@ -846,79 +848,88 @@ function BentoSlideshow({ projects = [] }) {
                             'lg:col-span-1'
                         ];
                         const imageUrl = p.image ? `/images/projects/${p.image}` : null;
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
-                            className: `rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 ${sizes[i] || ''}`,
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "relative w-full h-full bg-gray-800",
-                                children: [
-                                    imageUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                        src: imageUrl,
-                                        alt: p.title,
-                                        className: "absolute inset-0 h-full w-full object-cover transition-transform duration-300"
-                                    }, void 0, false, {
+                        const cardContent = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative w-full h-full bg-gray-800",
+                            children: [
+                                imageUrl ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                    src: imageUrl,
+                                    alt: p.title,
+                                    className: "absolute inset-0 h-full w-full object-cover transition-transform duration-300"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/BentoSlideshow.js",
+                                    lineNumber: 44,
+                                    columnNumber: 19
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/BentoSlideshow.js",
+                                    lineNumber: 50,
+                                    columnNumber: 19
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute inset-0 bg-black/30"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/BentoSlideshow.js",
+                                    lineNumber: 52,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative z-10 flex h-full items-center justify-center p-6 text-center",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-lg font-semibold text-white mb-2",
+                                                children: p.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/BentoSlideshow.js",
+                                                lineNumber: 55,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-gray-200",
+                                                children: p.excerpt
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/BentoSlideshow.js",
+                                                lineNumber: 56,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/components/BentoSlideshow.js",
-                                        lineNumber: 49,
-                                        columnNumber: 21
-                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/BentoSlideshow.js",
-                                        lineNumber: 55,
-                                        columnNumber: 21
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "absolute inset-0 bg-black/30"
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/BentoSlideshow.js",
-                                        lineNumber: 57,
-                                        columnNumber: 19
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative z-10 flex h-full items-center justify-center p-6 text-center",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "text-lg font-semibold text-white mb-2",
-                                                    children: p.title
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/BentoSlideshow.js",
-                                                    lineNumber: 60,
-                                                    columnNumber: 23
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sm text-gray-200",
-                                                    children: p.excerpt
-                                                }, void 0, false, {
-                                                    fileName: "[project]/components/BentoSlideshow.js",
-                                                    lineNumber: 61,
-                                                    columnNumber: 23
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/components/BentoSlideshow.js",
-                                            lineNumber: 59,
-                                            columnNumber: 21
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/BentoSlideshow.js",
-                                        lineNumber: 58,
+                                        lineNumber: 54,
                                         columnNumber: 19
                                     }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/components/BentoSlideshow.js",
-                                lineNumber: 47,
-                                columnNumber: 17
-                            }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/BentoSlideshow.js",
+                                    lineNumber: 53,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/BentoSlideshow.js",
+                            lineNumber: 42,
+                            columnNumber: 15
+                        }, this);
+                        return p.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                            href: p.href,
+                            className: `block rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 ${sizes[i] || ''}`,
+                            children: cardContent
                         }, index + i, false, {
                             fileName: "[project]/components/BentoSlideshow.js",
-                            lineNumber: 41,
+                            lineNumber: 63,
+                            columnNumber: 15
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                            className: `rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 ${sizes[i] || ''}`,
+                            children: cardContent
+                        }, index + i, false, {
+                            fileName: "[project]/components/BentoSlideshow.js",
+                            lineNumber: 73,
                             columnNumber: 15
                         }, this);
                     })
                 }, void 0, false, {
                     fileName: "[project]/components/BentoSlideshow.js",
-                    lineNumber: 28,
+                    lineNumber: 29,
                     columnNumber: 9
                 }, this),
                 maxSlides > 1 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -931,23 +942,23 @@ function BentoSlideshow({ projects = [] }) {
                             className: `w-2 h-2 rounded-full focus:outline-none transition-colors ${i === index ? 'bg-blue-500' : 'bg-gray-400 hover:bg-gray-600'}`
                         }, i, false, {
                             fileName: "[project]/components/BentoSlideshow.js",
-                            lineNumber: 73,
+                            lineNumber: 88,
                             columnNumber: 15
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/BentoSlideshow.js",
-                    lineNumber: 71,
+                    lineNumber: 86,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/BentoSlideshow.js",
-            lineNumber: 27,
+            lineNumber: 28,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/BentoSlideshow.js",
-        lineNumber: 26,
+        lineNumber: 27,
         columnNumber: 5
     }, this);
 }
@@ -1361,7 +1372,8 @@ const projects = [
     {
         title: 'ASHESI UNIVERSITY',
         excerpt: 'Energy-efficient HVAC design for a 12-storey building.',
-        image: 'project-1.jpg'
+        image: 'project-1.jpg',
+        href: '/projects/ashesi-university'
     },
     {
         title: 'ICGC-Christ Temple East',

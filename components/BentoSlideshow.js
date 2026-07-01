@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
 export default function BentoSlideshow({ projects = [] }) {
   const [index, setIndex] = useState(0)
@@ -37,31 +38,45 @@ export default function BentoSlideshow({ projects = [] }) {
               'lg:col-span-1',
             ]
             const imageUrl = p.image ? `/images/projects/${p.image}` : null
-            return (
+            const cardContent = (
+              <div className="relative w-full h-full bg-gray-800">
+                {imageUrl ? (
+                  <img
+                    src={imageUrl}
+                    alt={p.title}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-300"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900" />
+                )}
+                <div className="absolute inset-0 bg-black/30" />
+                <div className="relative z-10 flex h-full items-center justify-center p-6 text-center">
+                  <div>
+                    <h3 className="text-lg font-semibold text-white mb-2">{p.title}</h3>
+                    <p className="text-sm text-gray-200">{p.excerpt}</p>
+                  </div>
+                </div>
+              </div>
+            )
+
+            return p.href ? (
+              <Link
+                key={index + i}
+                href={p.href}
+                className={`block rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 ${
+                  sizes[i] || ''
+                }`}
+              >
+                {cardContent}
+              </Link>
+            ) : (
               <article
                 key={index + i}
                 className={`rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-105 ${
                   sizes[i] || ''
                 }`}
               >
-                <div className="relative w-full h-full bg-gray-800">
-                  {imageUrl ? (
-                    <img
-                      src={imageUrl}
-                      alt={p.title}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-300"
-                    />
-                  ) : (
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900" />
-                  )}
-                  <div className="absolute inset-0 bg-black/30" />
-                  <div className="relative z-10 flex h-full items-center justify-center p-6 text-center">
-                    <div>
-                      <h3 className="text-lg font-semibold text-white mb-2">{p.title}</h3>
-                      <p className="text-sm text-gray-200">{p.excerpt}</p>
-                    </div>
-                  </div>
-                </div>
+                {cardContent}
               </article>
             )
           })}

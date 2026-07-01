@@ -29,6 +29,34 @@ globalThis.__BUILD_MANIFEST = {
       "static/chunks/pages__app_0du2_q-._.js",
       "static/chunks/turbopack-pages__app_1werria._.js"
     ],
+    "/_error": [
+      "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_0pizcwv._.js",
+      "static/chunks/node_modules_next_dist_client_16lnmlo._.js",
+      "static/chunks/node_modules_next_dist_1atto1n._.js",
+      "static/chunks/[next]_entry_page-loader_ts_1aoli7m._.js",
+      "static/chunks/node_modules_react_1gmfq0p._.js",
+      "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
+      "static/chunks/node_modules_react-dom_13voigl._.js",
+      "static/chunks/node_modules_0jsiwv3._.js",
+      "static/chunks/[root-of-the-server]__02sxxph._.js",
+      "static/chunks/pages__error_0du2_q-._.js",
+      "static/chunks/turbopack-pages__error_0rryr4c._.js"
+    ],
+    "/projects/ashesi-university": [
+      "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
+      "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
+      "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
+      "static/chunks/node_modules_next_dist_0zk-zb1._.js",
+      "static/chunks/node_modules_next_12v18sk._.js",
+      "static/chunks/node_modules_react_1upe4-7._.js",
+      "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
+      "static/chunks/node_modules_react-dom_13voigl._.js",
+      "static/chunks/node_modules_0jsiwv3._.js",
+      "static/chunks/[root-of-the-server]__0hyjnyg._.js",
+      "static/chunks/pages_projects_ashesi-university_0du2_q-.js",
+      "static/chunks/turbopack-pages_projects_ashesi-university_0953vrj.js"
+    ],
     "/services": [
       "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
       "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",

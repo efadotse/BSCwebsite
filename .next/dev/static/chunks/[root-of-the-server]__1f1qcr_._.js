@@ -648,8 +648,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navbar$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Navbar.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/Footer.js [client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/react/index.js [client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/link.js [client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+;
 ;
 ;
 ;
@@ -658,7 +660,8 @@ const projects = [
         id: 1,
         title: 'ASHESI UNIVERSITY',
         image: '/images/projects/project-1.jpg',
-        span: 'col-span-2 row-span-2'
+        span: 'col-span-2 row-span-2',
+        href: '/projects/ashesi-university'
     },
     {
         id: 2,
@@ -710,7 +713,7 @@ function Projects() {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navbar$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/projects.js",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
@@ -726,7 +729,7 @@ function Projects() {
                                     children: "Our Projects"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/projects.js",
-                                    lineNumber: 25,
+                                    lineNumber: 26,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -734,18 +737,53 @@ function Projects() {
                                     children: "Every project we undertake reflects our commitment to engineering environments that perform, endure and inspire. From building services to large-scale infrastructure, our work delivers efficient, sustainable and future-ready MEP solutions shaped by technical excellence, integrity and lasting impact."
                                 }, void 0, false, {
                                     fileName: "[project]/pages/projects.js",
-                                    lineNumber: 26,
+                                    lineNumber: 27,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/projects.js",
-                            lineNumber: 24,
+                            lineNumber: 25,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "grid grid-cols-4 gap-4",
-                            children: projects.map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: projects.map((project)=>project.href ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                                    href: project.href,
+                                    className: `${project.span} rounded-2xl bg-slate-300 overflow-hidden relative group cursor-pointer block`,
+                                    onMouseEnter: ()=>setHoveredId(project.id),
+                                    onMouseLeave: ()=>setHoveredId(null),
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: project.image,
+                                            alt: project.title,
+                                            className: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                                        }, void 0, false, {
+                                            fileName: "[project]/pages/projects.js",
+                                            lineNumber: 41,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: `absolute inset-0 bg-black/60 flex items-center justify-center rounded-2xl transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`,
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-white text-center text-lg font-semibold px-6",
+                                                children: project.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects.js",
+                                                lineNumber: 43,
+                                                columnNumber: 21
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/pages/projects.js",
+                                            lineNumber: 42,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, project.id, true, {
+                                    fileName: "[project]/pages/projects.js",
+                                    lineNumber: 34,
+                                    columnNumber: 17
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: `${project.span} rounded-2xl bg-slate-300 overflow-hidden relative group cursor-pointer`,
                                     onMouseEnter: ()=>setHoveredId(project.id),
                                     onMouseLeave: ()=>setHoveredId(null),
@@ -756,8 +794,8 @@ function Projects() {
                                             className: "w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects.js",
-                                            lineNumber: 38,
-                                            columnNumber: 17
+                                            lineNumber: 53,
+                                            columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: `absolute inset-0 bg-black/60 flex items-center justify-center rounded-2xl transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`,
@@ -766,45 +804,45 @@ function Projects() {
                                                 children: project.title
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects.js",
-                                                lineNumber: 40,
-                                                columnNumber: 19
+                                                lineNumber: 55,
+                                                columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects.js",
-                                            lineNumber: 39,
-                                            columnNumber: 17
+                                            lineNumber: 54,
+                                            columnNumber: 19
                                         }, this)
                                     ]
                                 }, project.id, true, {
                                     fileName: "[project]/pages/projects.js",
-                                    lineNumber: 32,
-                                    columnNumber: 15
+                                    lineNumber: 47,
+                                    columnNumber: 17
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/pages/projects.js",
-                            lineNumber: 30,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/pages/projects.js",
-                    lineNumber: 23,
+                    lineNumber: 24,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/pages/projects.js",
-                lineNumber: 22,
+                lineNumber: 23,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/projects.js",
-                lineNumber: 47,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/projects.js",
-        lineNumber: 20,
+        lineNumber: 21,
         columnNumber: 5
     }, this);
 }

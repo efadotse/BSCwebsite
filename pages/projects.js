@@ -1,9 +1,10 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { useState } from 'react'
+import Link from 'next/link'
 
 const projects = [
-  { id: 1, title: 'ASHESI UNIVERSITY', image: '/images/projects/project-1.jpg', span: 'col-span-2 row-span-2' },
+  { id: 1, title: 'ASHESI UNIVERSITY', image: '/images/projects/project-1.jpg', span: 'col-span-2 row-span-2', href: '/projects/ashesi-university' },
   { id: 2, title: 'ICGC-CHRIST TEMPLE EAST', image: '/images/projects/project-2.jpg', span: '' },
   { id: 3, title: 'DIGITAL REALTY', image: '/images/projects/project-3.jpg', span: '' },
   { id: 4, title: 'THE NOVA', image: '/images/projects/project-4.jpg', span: '' },
@@ -29,17 +30,32 @@ export default function Projects(){
 
           <div className="grid grid-cols-4 gap-4">
             {projects.map((project) => (
-              <div
-                key={project.id}
-                className={`${project.span} rounded-2xl bg-slate-300 overflow-hidden relative group cursor-pointer`}
-                onMouseEnter={() => setHoveredId(project.id)}
-                onMouseLeave={() => setHoveredId(null)}
-              >
-                <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
-                <div className={`absolute inset-0 bg-black/60 flex items-center justify-center rounded-2xl transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}>
-                  <h3 className="text-white text-center text-lg font-semibold px-6">{project.title}</h3>
+              project.href ? (
+                <Link
+                  href={project.href}
+                  key={project.id}
+                  className={`${project.span} rounded-2xl bg-slate-300 overflow-hidden relative group cursor-pointer block`}
+                  onMouseEnter={() => setHoveredId(project.id)}
+                  onMouseLeave={() => setHoveredId(null)}
+                >
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div className={`absolute inset-0 bg-black/60 flex items-center justify-center rounded-2xl transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}>
+                    <h3 className="text-white text-center text-lg font-semibold px-6">{project.title}</h3>
+                  </div>
+                </Link>
+              ) : (
+                <div
+                  key={project.id}
+                  className={`${project.span} rounded-2xl bg-slate-300 overflow-hidden relative group cursor-pointer`}
+                  onMouseEnter={() => setHoveredId(project.id)}
+                  onMouseLeave={() => setHoveredId(null)}
+                >
+                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <div className={`absolute inset-0 bg-black/60 flex items-center justify-center rounded-2xl transition-opacity duration-300 ${hoveredId === project.id ? 'opacity-100' : 'opacity-0'}`}>
+                    <h3 className="text-white text-center text-lg font-semibold px-6">{project.title}</h3>
+                  </div>
                 </div>
-              </div>
+              )
             ))}
           </div>
         </section>

@@ -6,7 +6,7 @@ import ContactInfoPanel from '../components/ContactInfoPanel'
 import Footer from '../components/Footer'
 
 const projects = [
-  {title: 'ASHESI UNIVERSITY', excerpt: 'Energy-efficient HVAC design for a 12-storey building.', image: 'project-1.jpg'},
+  {title: 'ASHESI UNIVERSITY', excerpt: 'Energy-efficient HVAC design for a 12-storey building.', image: 'project-1.jpg', href: '/projects/ashesi-university'},
   {title: 'ICGC-Christ Temple East', excerpt: 'High-density cooling solution with redundancy.', image: 'project-2.jpg'},
   {title: 'DIGITAL REALTY', excerpt: 'Integrated MEP systems for mixed residential and retail.', image: 'project-3.jpg'},
   {title: 'THE NOVA', excerpt: 'Critical MEP systems for healthcare facility.', image: 'project-4.jpg'},
