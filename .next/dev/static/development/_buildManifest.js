@@ -5,11 +5,20 @@ self.__BUILD_MANIFEST = {
   "/_error": [
     "static/chunks/pages/_error.js"
   ],
+  "/projects": [
+    "static/chunks/pages/projects.js"
+  ],
   "/projects/ashesi-university": [
     "static/chunks/pages/projects/ashesi-university.js"
   ],
-  "/services": [
-    "static/chunks/pages/services.js"
+  "/projects/google-ghana": [
+    "static/chunks/pages/projects/google-ghana.js"
+  ],
+  "/projects/icgc-christ-temple-east": [
+    "static/chunks/pages/projects/icgc-christ-temple-east.js"
+  ],
+  "/projects/the-nova": [
+    "static/chunks/pages/projects/the-nova.js"
   ],
   "__rewrites": {
     "afterFiles": [],
@@ -24,6 +33,10 @@ self.__BUILD_MANIFEST = {
     "/contact",
     "/projects",
     "/projects/ashesi-university",
+    "/projects/digital-realty",
+    "/projects/google-ghana",
+    "/projects/icgc-christ-temple-east",
+    "/projects/the-nova",
     "/services"
   ]
 };self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

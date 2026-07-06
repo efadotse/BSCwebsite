@@ -3,6 +3,9 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/projects": "pages/projects.js",
   "/projects/ashesi-university": "pages/projects/ashesi-university.js",
-  "/services": "pages/services.js"
+  "/projects/google-ghana": "pages/projects/google-ghana.js",
+  "/projects/icgc-christ-temple-east": "pages/projects/icgc-christ-temple-east.js",
+  "/projects/the-nova": "pages/projects/the-nova.js"
 }

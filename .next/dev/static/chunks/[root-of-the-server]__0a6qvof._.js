@@ -930,11 +930,11 @@ var _s = __turbopack_context__.k.signature();
 function Hero({ title, subtitle, cta, centered }) {
     _s();
     const slides = [
-        '/images/slide-1.jpg',
-        '/images/slide-2.jpg',
-        '/images/slide-3.jpg',
-        '/images/slide-4.jpg',
-        '/images/slide-5.jpg'
+        '/images/hero/slide-1.jpg',
+        '/images/hero/slide-2.jpg',
+        '/images/hero/slide-3.jpg',
+        '/images/hero/slide-4.jpg',
+        '/images/hero/slide-5.jpg'
     ];
     const [index, setIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useState"])(0);
     const timerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);

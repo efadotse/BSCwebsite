@@ -7,10 +7,10 @@ import Footer from '../components/Footer'
 
 const projects = [
   {title: 'ASHESI UNIVERSITY', excerpt: 'Energy-efficient HVAC design for a 12-storey building.', image: 'project-1.jpg', href: '/projects/ashesi-university'},
-  {title: 'ICGC-Christ Temple East', excerpt: 'High-density cooling solution with redundancy.', image: 'project-2.jpg'},
-  {title: 'DIGITAL REALTY', excerpt: 'Integrated MEP systems for mixed residential and retail.', image: 'project-3.jpg'},
-  {title: 'THE NOVA', excerpt: 'Critical MEP systems for healthcare facility.', image: 'project-4.jpg'},
-  {title: 'GOOGLE GHANA', excerpt: 'IoT-enabled mechanical and electrical systems.', image: 'project-5.jpg'}
+  {title: 'ICGC-Christ Temple East', excerpt: 'High-density cooling solution with redundancy.', image: 'project-2.jpg', href: '/projects/icgc-christ-temple-east'},
+  {title: 'DIGITAL REALTY', excerpt: 'Integrated MEP systems for mixed residential and retail.', image: 'project-3.jpg', href: '/projects/digital-realty'},
+  {title: 'THE NOVA', excerpt: 'Critical MEP systems for healthcare facility.', image: 'project-4.jpg', href: '/projects/the-nova'},
+  {title: 'GOOGLE GHANA', excerpt: 'IoT-enabled mechanical and electrical systems.', image: 'project-5.jpg', href: '/projects/google-ghana'}
 ]
 
 export default function Home(){

@@ -17,9 +17,9 @@ function DetailImage({ src, alt, fallback, className = '' }) {
 }
 
 const stats = [
-  { value: '6,000+', label: 'Students Supported' },
-  { value: '100+', label: 'Buildings & Facilities' },
-  { value: '150,000+ m2', label: 'Total Built-up Area' },
+  { value: '5,000+', label: 'Students Supported' },
+  { value: '15+', label: 'Buildings & Facilities' },
+  { value: '150,000+ m²', label: 'Total Built-up Area' },
   { value: '15+ Years', label: 'MEP Consulting Partnership' },
 ]
 
@@ -67,12 +67,16 @@ export default function AshesiUniversityProject() {
             <p className="mb-4 text-xs uppercase tracking-[0.3em] text-amber-300">Featured Project</p>
             <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl">Ashesi University Campus</h1>
             <p className="mt-5 max-w-2xl text-base text-slate-100 md:text-xl">
-              Delivering integrated MEP engineering solutions for one of Africa&apos;s leading private universities.
+              Delivering integrated MEP engineering solutions for one of Africa's leading private universities.
             </p>
 
             <div className="mt-8 grid gap-3 text-sm sm:grid-cols-3 sm:gap-6">
               <p>Berkeruso, Ghana</p>
+              <p> </p>
+              <p> </p>
               <p>Education Sector</p>
+              <p> </p>
+              <p> </p>
               <p>Multiple Phases (2008 - Ongoing)</p>
             </div>
           </div>
@@ -103,7 +107,7 @@ export default function AshesiUniversityProject() {
               <p className="text-xs uppercase tracking-[0.3em] text-amber-500">Project Overview</p>
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Integrated MEP Solutions for a Growing Campus</h2>
               <p className="mt-5 text-slate-700 leading-7">
-                Ashesi University is one of Africa&apos;s most respected centers of learning, innovation, and leadership.
+                Ashesi University is one of Africa's most respected centers of learning, innovation, and leadership.
                 Built Engineering Consult has been privileged to provide MEP consulting services for the campus since
                 its early development phases.
               </p>
@@ -145,7 +149,7 @@ export default function AshesiUniversityProject() {
               <div>
                 <ul className="space-y-4 text-slate-700">
                   <li>Reliable building systems for academic and residential facilities</li>
-                  <li>Energy-efficient solutions tailored to Ghana&apos;s climate</li>
+                  <li>Energy-efficient solutions tailored to Ghana's climate</li>
                   <li>Systems designed for scalability and future phases</li>
                   <li>Close collaboration with the Ashesi project team across all development stages</li>
                 </ul>
@@ -196,7 +200,7 @@ export default function AshesiUniversityProject() {
           <div className="mt-10 mb-16 rounded-2xl bg-slate-100 p-8">
             <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
               <div>
-                <h3 className="text-2xl font-bold">Let&apos;s Build What&apos;s Next</h3>
+                <h3 className="text-2xl font-bold">Let's Build What's Next</h3>
                 <p className="mt-2 text-slate-600">From concept to completion, we deliver MEP solutions that power institutions and communities.</p>
               </div>
               <Link href="/contact" className="rounded-lg bg-amber-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-amber-600">

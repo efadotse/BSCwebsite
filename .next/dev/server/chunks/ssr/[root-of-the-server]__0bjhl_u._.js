@@ -201,15 +201,15 @@ function DetailImage({ src, alt, fallback, className = '' }) {
 }
 const stats = [
     {
-        value: '6,000+',
+        value: '5,000+',
         label: 'Students Supported'
     },
     {
-        value: '100+',
+        value: '15+',
         label: 'Buildings & Facilities'
     },
     {
-        value: '150,000+ m2',
+        value: '150,000+ m²',
         label: 'Total Built-up Area'
     },
     {
@@ -318,17 +318,45 @@ function AshesiUniversityProject() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                children: "Education Sector"
+                                                children: " "
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
                                                 lineNumber: 75,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                children: "Multiple Phases (2008 - Ongoing)"
+                                                children: " "
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
                                                 lineNumber: 76,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                children: "Education Sector"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects/ashesi-university.js",
+                                                lineNumber: 77,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects/ashesi-university.js",
+                                                lineNumber: 78,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                children: " "
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects/ashesi-university.js",
+                                                lineNumber: 79,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                children: "Multiple Phases (2008 - Ongoing)"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects/ashesi-university.js",
+                                                lineNumber: 80,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -361,7 +389,7 @@ function AshesiUniversityProject() {
                                             children: item.value
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 85,
+                                            lineNumber: 89,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -369,23 +397,23 @@ function AshesiUniversityProject() {
                                             children: item.label
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 86,
+                                            lineNumber: 90,
                                             columnNumber: 17
                                         }, this)
                                     ]
                                 }, item.label, true, {
                                     fileName: "[project]/pages/projects/ashesi-university.js",
-                                    lineNumber: 84,
+                                    lineNumber: 88,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/pages/projects/ashesi-university.js",
-                            lineNumber: 82,
+                            lineNumber: 86,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/projects/ashesi-university.js",
-                        lineNumber: 81,
+                        lineNumber: 85,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -400,7 +428,7 @@ function AshesiUniversityProject() {
                                         children: "Home"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 94,
+                                        lineNumber: 98,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -408,7 +436,7 @@ function AshesiUniversityProject() {
                                         children: "/"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 95,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -417,7 +445,7 @@ function AshesiUniversityProject() {
                                         children: "Projects"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 96,
+                                        lineNumber: 100,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -425,7 +453,7 @@ function AshesiUniversityProject() {
                                         children: "/"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 97,
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
@@ -433,13 +461,13 @@ function AshesiUniversityProject() {
                                         children: "Ashesi University Campus"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 98,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 93,
+                                lineNumber: 97,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -452,7 +480,7 @@ function AshesiUniversityProject() {
                                                 children: "Project Overview"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 103,
+                                                lineNumber: 107,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -460,7 +488,7 @@ function AshesiUniversityProject() {
                                                 children: "Integrated MEP Solutions for a Growing Campus"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 104,
+                                                lineNumber: 108,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -468,7 +496,7 @@ function AshesiUniversityProject() {
                                                 children: "Ashesi University is one of Africa's most respected centers of learning, innovation, and leadership. Built Engineering Consult has been privileged to provide MEP consulting services for the campus since its early development phases."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 105,
+                                                lineNumber: 109,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -476,13 +504,13 @@ function AshesiUniversityProject() {
                                                 children: "Our integrated engineering solutions ensure a comfortable, energy-efficient, and sustainable environment that supports teaching, learning, research, and community life."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 110,
+                                                lineNumber: 114,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 102,
+                                        lineNumber: 106,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -494,18 +522,18 @@ function AshesiUniversityProject() {
                                             className: "h-full w-full object-cover"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 117,
+                                            lineNumber: 121,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 116,
+                                        lineNumber: 120,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 101,
+                                lineNumber: 105,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -516,7 +544,7 @@ function AshesiUniversityProject() {
                                         children: "Our Scope"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 127,
+                                        lineNumber: 131,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -524,7 +552,7 @@ function AshesiUniversityProject() {
                                         children: "Integrated MEP Solutions"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 128,
+                                        lineNumber: 132,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -537,7 +565,7 @@ function AshesiUniversityProject() {
                                                         children: item.title
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 133,
+                                                        lineNumber: 137,
                                                         columnNumber: 19
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -545,24 +573,24 @@ function AshesiUniversityProject() {
                                                         children: item.body
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 134,
+                                                        lineNumber: 138,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, item.title, true, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 132,
+                                                lineNumber: 136,
                                                 columnNumber: 17
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 130,
+                                        lineNumber: 134,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 126,
+                                lineNumber: 130,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -573,7 +601,7 @@ function AshesiUniversityProject() {
                                         children: "Our Contributions"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 141,
+                                        lineNumber: 145,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
@@ -581,7 +609,7 @@ function AshesiUniversityProject() {
                                         children: "Engineering Excellence That Supports Education"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 142,
+                                        lineNumber: 146,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -595,39 +623,39 @@ function AshesiUniversityProject() {
                                                             children: "Reliable building systems for academic and residential facilities"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                                            lineNumber: 147,
+                                                            lineNumber: 151,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                                                             children: "Energy-efficient solutions tailored to Ghana's climate"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                                            lineNumber: 148,
+                                                            lineNumber: 152,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                                                             children: "Systems designed for scalability and future phases"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                                            lineNumber: 149,
+                                                            lineNumber: 153,
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                                                             children: "Close collaboration with the Ashesi project team across all development stages"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                                            lineNumber: 150,
+                                                            lineNumber: 154,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/pages/projects/ashesi-university.js",
-                                                    lineNumber: 146,
+                                                    lineNumber: 150,
                                                     columnNumber: 17
                                                 }, this)
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 145,
+                                                lineNumber: 149,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -646,29 +674,29 @@ function AshesiUniversityProject() {
                                                             className: "h-40 w-full object-cover md:h-52"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                                            lineNumber: 157,
+                                                            lineNumber: 161,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, n, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 156,
+                                                        lineNumber: 160,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 154,
+                                                lineNumber: 158,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 144,
+                                        lineNumber: 148,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 140,
+                                lineNumber: 144,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -679,7 +707,7 @@ function AshesiUniversityProject() {
                                         children: "Project Impact"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 170,
+                                        lineNumber: 174,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -692,14 +720,14 @@ function AshesiUniversityProject() {
                                                         children: "Sustainable Campus:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 172,
+                                                        lineNumber: 176,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Energy-conscious systems that reduce environmental impact."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 172,
+                                                lineNumber: 176,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -709,14 +737,14 @@ function AshesiUniversityProject() {
                                                         children: "Optimized Performance:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 173,
+                                                        lineNumber: 177,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Efficient, reliable systems for continuous operations."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 173,
+                                                lineNumber: 177,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -726,14 +754,14 @@ function AshesiUniversityProject() {
                                                         children: "Enhanced Learning:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 174,
+                                                        lineNumber: 178,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Well-designed building services that support academic excellence."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 174,
+                                                lineNumber: 178,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -743,26 +771,26 @@ function AshesiUniversityProject() {
                                                         children: "Long-Term Value:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                                        lineNumber: 175,
+                                                        lineNumber: 179,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Durable, scalable systems ready for future expansion."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 175,
+                                                lineNumber: 179,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 171,
+                                        lineNumber: 175,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 169,
+                                lineNumber: 173,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -777,13 +805,13 @@ function AshesiUniversityProject() {
                                                 children: "- Ashesi University Project Team"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                                lineNumber: 183,
+                                                lineNumber: 187,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 180,
+                                        lineNumber: 184,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -795,18 +823,18 @@ function AshesiUniversityProject() {
                                             className: "max-h-20 w-auto object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 187,
+                                            lineNumber: 191,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/ashesi-university.js",
-                                        lineNumber: 186,
+                                        lineNumber: 190,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 179,
+                                lineNumber: 183,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -821,7 +849,7 @@ function AshesiUniversityProject() {
                                                     children: "Let's Build What's Next"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/projects/ashesi-university.js",
-                                                    lineNumber: 199,
+                                                    lineNumber: 203,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -829,13 +857,13 @@ function AshesiUniversityProject() {
                                                     children: "From concept to completion, we deliver MEP solutions that power institutions and communities."
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/projects/ashesi-university.js",
-                                                    lineNumber: 200,
+                                                    lineNumber: 204,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 198,
+                                            lineNumber: 202,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -844,24 +872,24 @@ function AshesiUniversityProject() {
                                             children: "Start Your Project"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/ashesi-university.js",
-                                            lineNumber: 202,
+                                            lineNumber: 206,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/projects/ashesi-university.js",
-                                    lineNumber: 197,
+                                    lineNumber: 201,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/projects/ashesi-university.js",
-                                lineNumber: 196,
+                                lineNumber: 200,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/projects/ashesi-university.js",
-                        lineNumber: 92,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
@@ -872,7 +900,7 @@ function AshesiUniversityProject() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/projects/ashesi-university.js",
-                lineNumber: 210,
+                lineNumber: 214,
                 columnNumber: 7
             }, this)
         ]

@@ -3,11 +3,11 @@ import {useEffect, useRef, useState} from 'react'
 
 export default function Hero({title, subtitle, cta, centered}){
   const slides = [
-    '/images/slide-1.jpg',
-    '/images/slide-2.jpg',
-    '/images/slide-3.jpg',
-    '/images/slide-4.jpg',
-    '/images/slide-5.jpg'
+    '/images/hero/slide-1.jpg',
+    '/images/hero/slide-2.jpg',
+    '/images/hero/slide-3.jpg',
+    '/images/hero/slide-4.jpg',
+    '/images/hero/slide-5.jpg'
   ]
   const [index, setIndex] = useState(0)
   const timerRef = useRef(null)

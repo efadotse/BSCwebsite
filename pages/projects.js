@@ -5,10 +5,10 @@ import Link from 'next/link'
 
 const projects = [
   { id: 1, title: 'ASHESI UNIVERSITY', image: '/images/projects/project-1.jpg', span: 'col-span-2 row-span-2', href: '/projects/ashesi-university' },
-  { id: 2, title: 'ICGC-CHRIST TEMPLE EAST', image: '/images/projects/project-2.jpg', span: '' },
-  { id: 3, title: 'DIGITAL REALTY', image: '/images/projects/project-3.jpg', span: '' },
-  { id: 4, title: 'THE NOVA', image: '/images/projects/project-4.jpg', span: '' },
-  { id: 5, title: 'GOOGLE GHANA', image: '/images/projects/project-5.jpg', span: '' },
+  { id: 2, title: 'ICGC-CHRIST TEMPLE EAST', image: '/images/projects/project-2.jpg', span: '', href: '/projects/icgc-christ-temple-east' },
+  { id: 3, title: 'DIGITAL REALTY', image: '/images/projects/project-3.jpg', span: '', href: '/projects/digital-realty' },
+  { id: 4, title: 'THE NOVA', image: '/images/projects/project-4.jpg', span: '', href: '/projects/the-nova' },
+  { id: 5, title: 'GOOGLE GHANA', image: '/images/projects/project-5.jpg', span: '', href: '/projects/google-ghana' },
   { id: 6, title: 'Industrial Plant Retrofit', image: '/images/projects/project-6.jpg', span: 'col-span-2' },
   { id: 7, title: 'CH GROUP', image: '/images/projects/project-7.jpg', span: '' },
   { id: 8, title: 'Sustainable Campus Development', image: '/images/projects/project-8.jpg', span: '' },

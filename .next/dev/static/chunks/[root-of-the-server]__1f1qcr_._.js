@@ -667,25 +667,29 @@ const projects = [
         id: 2,
         title: 'ICGC-CHRIST TEMPLE EAST',
         image: '/images/projects/project-2.jpg',
-        span: ''
+        span: '',
+        href: '/projects/icgc-christ-temple-east'
     },
     {
         id: 3,
         title: 'DIGITAL REALTY',
         image: '/images/projects/project-3.jpg',
-        span: ''
+        span: '',
+        href: '/projects/digital-realty'
     },
     {
         id: 4,
         title: 'THE NOVA',
         image: '/images/projects/project-4.jpg',
-        span: ''
+        span: '',
+        href: '/projects/the-nova'
     },
     {
         id: 5,
         title: 'GOOGLE GHANA',
         image: '/images/projects/project-5.jpg',
-        span: ''
+        span: '',
+        href: '/projects/google-ghana'
     },
     {
         id: 6,

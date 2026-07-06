@@ -200,11 +200,11 @@ var __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$
 ;
 function Hero({ title, subtitle, cta, centered }) {
     const slides = [
-        '/images/slide-1.jpg',
-        '/images/slide-2.jpg',
-        '/images/slide-3.jpg',
-        '/images/slide-4.jpg',
-        '/images/slide-5.jpg'
+        '/images/hero/slide-1.jpg',
+        '/images/hero/slide-2.jpg',
+        '/images/hero/slide-3.jpg',
+        '/images/hero/slide-4.jpg',
+        '/images/hero/slide-5.jpg'
     ];
     const [index, setIndex] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(0);
     const timerRef = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useRef"])(null);
@@ -858,22 +858,26 @@ const projects = [
     {
         title: 'ICGC-Christ Temple East',
         excerpt: 'High-density cooling solution with redundancy.',
-        image: 'project-2.jpg'
+        image: 'project-2.jpg',
+        href: '/projects/icgc-christ-temple-east'
     },
     {
         title: 'DIGITAL REALTY',
         excerpt: 'Integrated MEP systems for mixed residential and retail.',
-        image: 'project-3.jpg'
+        image: 'project-3.jpg',
+        href: '/projects/digital-realty'
     },
     {
         title: 'THE NOVA',
         excerpt: 'Critical MEP systems for healthcare facility.',
-        image: 'project-4.jpg'
+        image: 'project-4.jpg',
+        href: '/projects/the-nova'
     },
     {
         title: 'GOOGLE GHANA',
         excerpt: 'IoT-enabled mechanical and electrical systems.',
-        image: 'project-5.jpg'
+        image: 'project-5.jpg',
+        href: '/projects/google-ghana'
     }
 ];
 function Home() {
