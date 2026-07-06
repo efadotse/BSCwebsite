@@ -11,6 +11,9 @@ self.__BUILD_MANIFEST = {
   "/projects/ashesi-university": [
     "static/chunks/pages/projects/ashesi-university.js"
   ],
+  "/projects/digital-realty": [
+    "static/chunks/pages/projects/digital-realty.js"
+  ],
   "/projects/google-ghana": [
     "static/chunks/pages/projects/google-ghana.js"
   ],

@@ -115,7 +115,7 @@ export default function ICGCChristTempleEastProject() {
                 thousands of worshippers.
               </p>
               <p className="mt-4 text-slate-700 leading-7">
-                Built Engineering Consult provided comprehensive MEP engineering consultancy services, ensuring the
+                Built Services Consult provided comprehensive MEP engineering consultancy services, ensuring the
                 building delivers exceptional comfort, safety, energy efficiency, and acoustics to support a
                 life-transforming worship experience.
               </p>
@@ -195,7 +195,7 @@ export default function ICGCChristTempleEastProject() {
 
           <div className="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm md:grid-cols-[2fr_1fr]">
             <blockquote className="text-slate-700 leading-7">
-              Built Engineering Consult demonstrated outstanding professionalism, technical expertise, and commitment to excellence in delivering MEP solutions that support our mission and vision for Christ Temple East.
+              Built Services Consult demonstrated outstanding professionalism, technical expertise, and commitment to excellence in delivering MEP solutions that support our mission and vision for Christ Temple East.
               <footer className="mt-4 font-semibold text-slate-900">- ICGC Project Team</footer>
             </blockquote>
 

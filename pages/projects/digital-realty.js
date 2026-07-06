@@ -107,12 +107,12 @@ export default function DigitalRealtyProject() {
               <p className="text-xs uppercase tracking-[0.3em] text-amber-500">Project Overview</p>
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Powering Digital Infrastructure for a Connected Future</h2>
               <p className="mt-5 text-slate-700 leading-7">
-                Built Engineering Consult provided integrated MEP engineering consultancy services for Digital Realty&apos;s
+                Built Services Consult provided integrated MEP engineering consultancy services for Digital Realty's
                 state-of-the-art data center in Accra, Ghana.
               </p>
               <p className="mt-4 text-slate-700 leading-7">
                 The facility is designed to meet global Tier III standards, delivering unmatched reliability,
-                efficiency, and scalability to support the region&apos;s growing digital economy.
+                efficiency, and scalability to support the region's growing digital economy.
               </p>
               <a
                 href="#gallery"
@@ -189,7 +189,7 @@ export default function DigitalRealtyProject() {
 
           <div className="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm md:grid-cols-[2fr_1fr]">
             <blockquote className="text-slate-700 leading-7">
-              Built Engineering Consult demonstrated exceptional technical expertise, collaboration, and commitment to quality throughout the project lifecycle. Their MEP solutions are integral to the reliability and efficiency of our data center in Ghana.
+              Built Services Consult demonstrated exceptional technical expertise, collaboration, and commitment to quality throughout the project lifecycle. Their MEP solutions are integral to the reliability and efficiency of our data center in Ghana.
               <footer className="mt-4 font-semibold text-slate-900">- Digital Realty Project Team</footer>
             </blockquote>
 
@@ -206,7 +206,7 @@ export default function DigitalRealtyProject() {
           <div className="mt-10 mb-16 rounded-2xl bg-slate-100 p-8">
             <div className="flex flex-col items-center justify-between gap-5 md:flex-row">
               <div>
-                <h3 className="text-2xl font-bold">Let&apos;s Build What&apos;s Next</h3>
+                <h3 className="text-2xl font-bold">Let's Build What's Next</h3>
                 <p className="mt-2 text-slate-600">Partner with us to deliver mission-critical MEP solutions that power digital infrastructure and drive progress.</p>
               </div>
               <Link href="/contact" className="rounded-lg bg-amber-500 px-7 py-3 text-sm font-semibold text-white transition hover:bg-amber-600">

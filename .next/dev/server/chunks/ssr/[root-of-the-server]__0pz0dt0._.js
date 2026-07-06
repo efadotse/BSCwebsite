@@ -493,7 +493,7 @@ function GoogleGhanaProject() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                 className: "mt-5 text-slate-700 leading-7",
-                                                children: "Google Ghana's office in Airport City, Accra is designed to foster creativity, collaboration, and well-being. Built Engineering Consult delivered full MEP engineering services that ensure high performance, energy efficiency, and occupant comfort throughout the building."
+                                                children: "Google Ghana's office in Airport City, Accra is designed to foster creativity, collaboration, and well-being. Built Services Consult delivered full MEP engineering services that ensure high performance, energy efficiency, and occupant comfort throughout the building."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/google-ghana.js",
                                                 lineNumber: 109,
@@ -830,7 +830,7 @@ function GoogleGhanaProject() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("blockquote", {
                                         className: "text-slate-700 leading-7",
                                         children: [
-                                            "The Built Engineering Consult team demonstrated deep technical expertise, collaborative approach, and a strong commitment to quality. Their MEP solutions have been instrumental in creating an innovative and sustainable workplace for us.",
+                                            "The Built Services Consult team demonstrated deep technical expertise, collaborative approach, and a strong commitment to quality. Their MEP solutions have been instrumental in creating an innovative and sustainable workplace for us.",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("footer", {
                                                 className: "mt-4 font-semibold text-slate-900",
                                                 children: "- Google Facilities & Real Estate Team"

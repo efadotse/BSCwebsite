@@ -357,7 +357,7 @@ function TheNovaProject() {
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                children: "Completed: 2023"
+                                                children: "Completed: 2024"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
                                                 lineNumber: 84,
@@ -497,7 +497,7 @@ function TheNovaProject() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
                                                 className: "mt-5 text-slate-700 leading-7",
-                                                children: "The Nova Apartments is a premium residential development in the heart of Cantonments, Accra. Built Engineering Consult was responsible for providing integrated MEP engineering consultancy services that ensure optimal performance, occupant comfort, energy efficiency, and long-term reliability."
+                                                children: "The Nova Apartments is a premium residential development in the heart of Roman Ridge, Accra. Built Services Consult was responsible for providing integrated MEP engineering consultancy services that ensure optimal performance, occupant comfort, energy efficiency, and long-term reliability."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
                                                 lineNumber: 113,
@@ -669,17 +669,10 @@ function TheNovaProject() {
                                                             columnNumber: 19
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
-                                                            children: "Building Management System (BMS) for monitoring and control"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/pages/projects/the-nova.js",
-                                                            lineNumber: 166,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
                                                             children: "Energy-efficient design to reduce operational costs"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/the-nova.js",
-                                                            lineNumber: 167,
+                                                            lineNumber: 166,
                                                             columnNumber: 19
                                                         }, this)
                                                     ]
@@ -709,17 +702,17 @@ function TheNovaProject() {
                                                             className: "h-40 w-full object-cover md:h-52"
                                                         }, void 0, false, {
                                                             fileName: "[project]/pages/projects/the-nova.js",
-                                                            lineNumber: 174,
+                                                            lineNumber: 173,
                                                             columnNumber: 21
                                                         }, this)
                                                     }, n, false, {
                                                         fileName: "[project]/pages/projects/the-nova.js",
-                                                        lineNumber: 173,
+                                                        lineNumber: 172,
                                                         columnNumber: 19
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
-                                                lineNumber: 171,
+                                                lineNumber: 170,
                                                 columnNumber: 15
                                             }, this)
                                         ]
@@ -742,7 +735,7 @@ function TheNovaProject() {
                                         children: "Project Impact"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/the-nova.js",
-                                        lineNumber: 187,
+                                        lineNumber: 186,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -755,10 +748,27 @@ function TheNovaProject() {
                                                         children: "Enhanced Comfort:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/the-nova.js",
-                                                        lineNumber: 189,
+                                                        lineNumber: 188,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Consistent indoor comfort and superior air quality for residents."
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/pages/projects/the-nova.js",
+                                                lineNumber: 188,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                        className: "font-semibold",
+                                                        children: "Energy Efficiency:"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/projects/the-nova.js",
+                                                        lineNumber: 189,
+                                                        columnNumber: 18
+                                                    }, this),
+                                                    " Reduced energy consumption through efficient systems and smart controls."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
@@ -769,13 +779,13 @@ function TheNovaProject() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                         className: "font-semibold",
-                                                        children: "Energy Efficiency:"
+                                                        children: "Reliable Performance:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/the-nova.js",
                                                         lineNumber: 190,
                                                         columnNumber: 18
                                                     }, this),
-                                                    " Reduced energy consumption through efficient systems and smart controls."
+                                                    " Robust MEP systems ensuring uninterrupted performance and safety."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
@@ -786,46 +796,29 @@ function TheNovaProject() {
                                                 children: [
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
                                                         className: "font-semibold",
-                                                        children: "Reliable Performance:"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/pages/projects/the-nova.js",
-                                                        lineNumber: 191,
-                                                        columnNumber: 18
-                                                    }, this),
-                                                    " Robust MEP systems ensuring uninterrupted performance and safety."
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/pages/projects/the-nova.js",
-                                                lineNumber: 191,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                children: [
-                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                                        className: "font-semibold",
                                                         children: "Sustainable Value:"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/projects/the-nova.js",
-                                                        lineNumber: 192,
+                                                        lineNumber: 191,
                                                         columnNumber: 18
                                                     }, this),
                                                     " Lower operational costs and long-term value for the developer and residents."
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
-                                                lineNumber: 192,
+                                                lineNumber: 191,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/the-nova.js",
-                                        lineNumber: 188,
+                                        lineNumber: 187,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/the-nova.js",
-                                lineNumber: 186,
+                                lineNumber: 185,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -834,19 +827,19 @@ function TheNovaProject() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("blockquote", {
                                         className: "text-slate-700 leading-7",
                                         children: [
-                                            "Built Engineering Consult delivered exceptional MEP consultancy services for The Nova Apartments. Their professionalism, technical expertise, and commitment to quality were key to the success of this landmark project.",
+                                            "Built Services Consult delivered exceptional MEP consultancy services for The Nova Apartments. Their professionalism, technical expertise, and commitment to quality were key to the success of this landmark project.",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("footer", {
                                                 className: "mt-4 font-semibold text-slate-900",
                                                 children: "- DevtracoPlus"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/the-nova.js",
-                                                lineNumber: 201,
+                                                lineNumber: 200,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/projects/the-nova.js",
-                                        lineNumber: 197,
+                                        lineNumber: 196,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -858,18 +851,18 @@ function TheNovaProject() {
                                             className: "max-h-20 w-auto object-contain"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/the-nova.js",
-                                            lineNumber: 205,
+                                            lineNumber: 204,
                                             columnNumber: 15
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/pages/projects/the-nova.js",
-                                        lineNumber: 204,
+                                        lineNumber: 203,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/projects/the-nova.js",
-                                lineNumber: 196,
+                                lineNumber: 195,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -884,7 +877,7 @@ function TheNovaProject() {
                                                     children: "Let's Build What's Next"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/projects/the-nova.js",
-                                                    lineNumber: 217,
+                                                    lineNumber: 216,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -892,13 +885,13 @@ function TheNovaProject() {
                                                     children: "From concept to completion, we deliver MEP solutions that create comfort, efficiency, and lasting value."
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/projects/the-nova.js",
-                                                    lineNumber: 218,
+                                                    lineNumber: 217,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/projects/the-nova.js",
-                                            lineNumber: 216,
+                                            lineNumber: 215,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -907,18 +900,18 @@ function TheNovaProject() {
                                             children: "Start Your Project"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/projects/the-nova.js",
-                                            lineNumber: 220,
+                                            lineNumber: 219,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/projects/the-nova.js",
-                                    lineNumber: 215,
+                                    lineNumber: 214,
                                     columnNumber: 13
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/pages/projects/the-nova.js",
-                                lineNumber: 214,
+                                lineNumber: 213,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -935,7 +928,7 @@ function TheNovaProject() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/projects/the-nova.js",
-                lineNumber: 228,
+                lineNumber: 227,
                 columnNumber: 7
             }, this)
         ]

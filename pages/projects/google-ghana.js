@@ -108,7 +108,7 @@ export default function GoogleGhanaProject() {
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Engineering a Workplace That Inspires Innovation</h2>
               <p className="mt-5 text-slate-700 leading-7">
                 Google Ghana's office in Airport City, Accra is designed to foster creativity, collaboration, and
-                well-being. Built Engineering Consult delivered full MEP engineering services that ensure high
+                well-being. Built Services Consult delivered full MEP engineering services that ensure high
                 performance, energy efficiency, and occupant comfort throughout the building.
               </p>
               <p className="mt-4 text-slate-700 leading-7">
@@ -191,7 +191,7 @@ export default function GoogleGhanaProject() {
 
           <div className="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm md:grid-cols-[2fr_1fr]">
             <blockquote className="text-slate-700 leading-7">
-              The Built Engineering Consult team demonstrated deep technical expertise, collaborative approach, and a
+              The Built Services Consult team demonstrated deep technical expertise, collaborative approach, and a
               strong commitment to quality. Their MEP solutions have been instrumental in creating an innovative and
               sustainable workplace for us.
               <footer className="mt-4 font-semibold text-slate-900">- Google Facilities & Real Estate Team</footer>

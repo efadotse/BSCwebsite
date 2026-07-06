@@ -962,7 +962,7 @@ function AshesiUniversityProject() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-5 text-slate-700 leading-7",
-                                                children: "Ashesi University is one of Africa's most respected centers of learning, innovation, and leadership. Built Engineering Consult has been privileged to provide MEP consulting services for the campus since its early development phases."
+                                                children: "Ashesi University is one of Africa's most respected centers of learning, innovation, and leadership. Built Services Consult has been privileged to provide MEP consulting services for the campus since its early development phases."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/ashesi-university.js",
                                                 lineNumber: 109,
@@ -1268,7 +1268,7 @@ function AshesiUniversityProject() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
                                         className: "text-slate-700 leading-7",
                                         children: [
-                                            "Built Engineering Consult has been a trusted partner in our journey to build a world-class university. Their MEP expertise, professionalism, and commitment to quality have been instrumental in shaping our campus.",
+                                            "Built Services Consult has been a trusted partner in our journey to build a world-class university. Their MEP expertise, professionalism, and commitment to quality have been instrumental in shaping our campus.",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                                                 className: "mt-4 font-semibold text-slate-900",
                                                 children: "- Ashesi University Project Team"

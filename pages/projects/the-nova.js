@@ -81,7 +81,7 @@ export default function TheNovaProject() {
               <p>Luxury Residential Development</p>
               <p> </p>
               <p> </p>
-              <p>Completed: 2023</p>
+              <p>Completed: 2024</p>
             </div>
           </div>
         </section>
@@ -111,8 +111,8 @@ export default function TheNovaProject() {
               <p className="text-xs uppercase tracking-[0.3em] text-amber-500">Project Overview</p>
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Engineering Comfort, Efficiency & Luxury</h2>
               <p className="mt-5 text-slate-700 leading-7">
-                The Nova Apartments is a premium residential development in the heart of Cantonments, Accra.
-                Built Engineering Consult was responsible for providing integrated MEP engineering consultancy
+                The Nova Apartments is a premium residential development in the heart of Roman Ridge, Accra.
+                Built Services Consult was responsible for providing integrated MEP engineering consultancy
                 services that ensure optimal performance, occupant comfort, energy efficiency, and long-term reliability.
               </p>
               <p className="mt-4 text-slate-700 leading-7">
@@ -163,7 +163,6 @@ export default function TheNovaProject() {
                   <li>Low-noise plumbing systems for enhanced comfort</li>
                   <li>Full fire protection and life safety systems</li>
                   <li>Standby power with automatic changeover</li>
-                  <li>Building Management System (BMS) for monitoring and control</li>
                   <li>Energy-efficient design to reduce operational costs</li>
                 </ul>
               </div>
@@ -195,7 +194,7 @@ export default function TheNovaProject() {
 
           <div className="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm md:grid-cols-[2fr_1fr]">
             <blockquote className="text-slate-700 leading-7">
-              Built Engineering Consult delivered exceptional MEP consultancy services for The Nova Apartments.
+              Built Services Consult delivered exceptional MEP consultancy services for The Nova Apartments.
               Their professionalism, technical expertise, and commitment to quality were key to the success of this
               landmark project.
               <footer className="mt-4 font-semibold text-slate-900">- DevtracoPlus</footer>

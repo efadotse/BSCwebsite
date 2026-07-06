@@ -974,7 +974,7 @@ function ICGCChristTempleEastProject() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-4 text-slate-700 leading-7",
-                                                children: "Built Engineering Consult provided comprehensive MEP engineering consultancy services, ensuring the building delivers exceptional comfort, safety, energy efficiency, and acoustics to support a life-transforming worship experience."
+                                                children: "Built Services Consult provided comprehensive MEP engineering consultancy services, ensuring the building delivers exceptional comfort, safety, energy efficiency, and acoustics to support a life-transforming worship experience."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/icgc-christ-temple-east.js",
                                                 lineNumber: 117,
@@ -1303,7 +1303,7 @@ function ICGCChristTempleEastProject() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
                                         className: "text-slate-700 leading-7",
                                         children: [
-                                            "Built Engineering Consult demonstrated outstanding professionalism, technical expertise, and commitment to excellence in delivering MEP solutions that support our mission and vision for Christ Temple East.",
+                                            "Built Services Consult demonstrated outstanding professionalism, technical expertise, and commitment to excellence in delivering MEP solutions that support our mission and vision for Christ Temple East.",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                                                 className: "mt-4 font-semibold text-slate-900",
                                                 children: "- ICGC Project Team"

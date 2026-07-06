@@ -108,7 +108,7 @@ export default function AshesiUniversityProject() {
               <h2 className="mt-3 text-3xl font-bold md:text-4xl">Integrated MEP Solutions for a Growing Campus</h2>
               <p className="mt-5 text-slate-700 leading-7">
                 Ashesi University is one of Africa's most respected centers of learning, innovation, and leadership.
-                Built Engineering Consult has been privileged to provide MEP consulting services for the campus since
+                Built Services Consult has been privileged to provide MEP consulting services for the campus since
                 its early development phases.
               </p>
               <p className="mt-4 text-slate-700 leading-7">
@@ -182,7 +182,7 @@ export default function AshesiUniversityProject() {
 
           <div className="mt-10 grid gap-6 rounded-2xl bg-white p-8 shadow-sm md:grid-cols-[2fr_1fr]">
             <blockquote className="text-slate-700 leading-7">
-              Built Engineering Consult has been a trusted partner in our journey to build a world-class university.
+              Built Services Consult has been a trusted partner in our journey to build a world-class university.
               Their MEP expertise, professionalism, and commitment to quality have been instrumental in shaping our campus.
               <footer className="mt-4 font-semibold text-slate-900">- Ashesi University Project Team</footer>
             </blockquote>

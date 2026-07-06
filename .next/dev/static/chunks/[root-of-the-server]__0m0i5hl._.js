@@ -954,7 +954,7 @@ function DigitalRealtyProject() {
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                 className: "mt-5 text-slate-700 leading-7",
-                                                children: "Built Engineering Consult provided integrated MEP engineering consultancy services for Digital Realty's state-of-the-art data center in Accra, Ghana."
+                                                children: "Built Services Consult provided integrated MEP engineering consultancy services for Digital Realty's state-of-the-art data center in Accra, Ghana."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/projects/digital-realty.js",
                                                 lineNumber: 109,
@@ -1284,7 +1284,7 @@ function DigitalRealtyProject() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("blockquote", {
                                         className: "text-slate-700 leading-7",
                                         children: [
-                                            "Built Engineering Consult demonstrated exceptional technical expertise, collaboration, and commitment to quality throughout the project lifecycle. Their MEP solutions are integral to the reliability and efficiency of our data center in Ghana.",
+                                            "Built Services Consult demonstrated exceptional technical expertise, collaboration, and commitment to quality throughout the project lifecycle. Their MEP solutions are integral to the reliability and efficiency of our data center in Ghana.",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
                                                 className: "mt-4 font-semibold text-slate-900",
                                                 children: "- Digital Realty Project Team"
