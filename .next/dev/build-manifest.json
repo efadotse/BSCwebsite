@@ -43,7 +43,7 @@
       "static/chunks/pages__error_0du2_q-._.js",
       "static/chunks/turbopack-pages__error_0rryr4c._.js"
     ],
-    "/projects": [
+    "/about": [
       "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
       "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
       "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
@@ -53,23 +53,9 @@
       "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
       "static/chunks/node_modules_react-dom_13voigl._.js",
       "static/chunks/node_modules_0jsiwv3._.js",
-      "static/chunks/[root-of-the-server]__1f1qcr_._.js",
-      "static/chunks/pages_projects_0du2_q-._.js",
-      "static/chunks/turbopack-pages_projects_07iejka._.js"
-    ],
-    "/projects/ashesi-university": [
-      "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
-      "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
-      "static/chunks/node_modules_next_dist_0zk-zb1._.js",
-      "static/chunks/node_modules_next_12v18sk._.js",
-      "static/chunks/node_modules_react_1upe4-7._.js",
-      "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
-      "static/chunks/node_modules_react-dom_13voigl._.js",
-      "static/chunks/node_modules_0jsiwv3._.js",
-      "static/chunks/[root-of-the-server]__0hyjnyg._.js",
-      "static/chunks/pages_projects_ashesi-university_0du2_q-.js",
-      "static/chunks/turbopack-pages_projects_ashesi-university_0953vrj.js"
+      "static/chunks/[root-of-the-server]__0a6qvof._.js",
+      "static/chunks/pages_about_0du2_q-._.js",
+      "static/chunks/turbopack-pages_about_1tcummn._.js"
     ],
     "/projects/digital-realty": [
       "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
@@ -85,7 +71,7 @@
       "static/chunks/pages_projects_digital-realty_0du2_q-.js",
       "static/chunks/turbopack-pages_projects_digital-realty_0n7zt2i.js"
     ],
-    "/projects/google-ghana": [
+    "/services": [
       "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
       "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
       "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
@@ -95,37 +81,9 @@
       "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
       "static/chunks/node_modules_react-dom_13voigl._.js",
       "static/chunks/node_modules_0jsiwv3._.js",
-      "static/chunks/[root-of-the-server]__1ivlne5._.js",
-      "static/chunks/pages_projects_google-ghana_0du2_q-.js",
-      "static/chunks/turbopack-pages_projects_google-ghana_04omy81.js"
-    ],
-    "/projects/icgc-christ-temple-east": [
-      "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
-      "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
-      "static/chunks/node_modules_next_dist_0zk-zb1._.js",
-      "static/chunks/node_modules_next_12v18sk._.js",
-      "static/chunks/node_modules_react_1upe4-7._.js",
-      "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
-      "static/chunks/node_modules_react-dom_13voigl._.js",
-      "static/chunks/node_modules_0jsiwv3._.js",
-      "static/chunks/[root-of-the-server]__1yra2d6._.js",
-      "static/chunks/pages_projects_icgc-christ-temple-east_0du2_q-.js",
-      "static/chunks/turbopack-pages_projects_icgc-christ-temple-east_1cyeu3z.js"
-    ],
-    "/projects/the-nova": [
-      "static/chunks/node_modules_next_dist_compiled_14ibvna._.js",
-      "static/chunks/node_modules_next_dist_shared_lib_0e4mbnw._.js",
-      "static/chunks/node_modules_next_dist_client_01nfwoe._.js",
-      "static/chunks/node_modules_next_dist_0zk-zb1._.js",
-      "static/chunks/node_modules_next_12v18sk._.js",
-      "static/chunks/node_modules_react_1upe4-7._.js",
-      "static/chunks/node_modules_react-dom_cjs_react-dom_development_0d3scg3.js",
-      "static/chunks/node_modules_react-dom_13voigl._.js",
-      "static/chunks/node_modules_0jsiwv3._.js",
-      "static/chunks/[root-of-the-server]__07f4ioz._.js",
-      "static/chunks/pages_projects_the-nova_0du2_q-.js",
-      "static/chunks/turbopack-pages_projects_the-nova_0o4df8z.js"
+      "static/chunks/[root-of-the-server]__030s2gt._.js",
+      "static/chunks/pages_services_0du2_q-._.js",
+      "static/chunks/turbopack-pages_services_107o4ni._.js"
     ]
   },
   "devFiles": [],

@@ -40,7 +40,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$rout
 ;
 function Navbar() {
     const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
+    const [mobileMenuOpen, setMobileMenuOpen] = (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useState"])(false);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$router$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
+    const navItems = [
+        {
+            href: '/about',
+            label: 'About'
+        },
+        {
+            href: '/services',
+            label: 'Services'
+        },
+        {
+            href: '/projects',
+            label: 'Projects'
+        },
+        {
+            href: '/contact',
+            label: 'Contact'
+        }
+    ];
     const isHome = router.pathname === '/';
     const isAbout = router.pathname === '/about';
     const forceDark = !isHome && !isAbout;
@@ -50,90 +69,168 @@ function Navbar() {
         window.addEventListener('scroll', handleScroll);
         return ()=>window.removeEventListener('scroll', handleScroll);
     }, []);
+    (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react__$5b$external$5d$__$28$react$2c$__cjs$29$__["useEffect"])(()=>{
+        setMobileMenuOpen(false);
+    }, [
+        router.pathname
+    ]);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("header", {
         className: `fixed inset-x-0 top-0 z-50 transition-all duration-300 ${forceDark ? 'bg-white/95 text-slate-900 border-b border-slate-200 shadow-sm' : scrolled ? 'bg-white/95 text-slate-900 border-b border-slate-200 shadow-sm' : 'bg-transparent text-white'} `,
-        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-            className: "container flex items-center justify-between py-4",
-            children: [
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                    href: "/",
-                    "aria-label": "Home",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
-                        src: "/images/logo.png",
-                        alt: "BSC",
-                        className: "h-12 md:h-16 object-contain"
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                className: "container flex items-center justify-between py-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                        href: "/",
+                        "aria-label": "Home",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                            src: "/images/logo.png",
+                            alt: "BSC",
+                            className: "h-12 md:h-16 object-contain"
+                        }, void 0, false, {
+                            fileName: "[project]/components/Navbar.js",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 24,
-                        columnNumber: 11
+                        lineNumber: 35,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("button", {
+                        type: "button",
+                        className: "inline-flex h-11 w-11 items-center justify-center rounded-md border border-slate-300 md:hidden",
+                        "aria-label": mobileMenuOpen ? 'Close menu' : 'Open menu',
+                        "aria-expanded": mobileMenuOpen,
+                        onClick: ()=>setMobileMenuOpen((open)=>!open),
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                className: "sr-only",
+                                children: "Menu"
+                            }, void 0, false, {
+                                fileName: "[project]/components/Navbar.js",
+                                lineNumber: 46,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("svg", {
+                                className: "h-6 w-6",
+                                viewBox: "0 0 24 24",
+                                fill: "none",
+                                stroke: "currentColor",
+                                strokeWidth: "2",
+                                strokeLinecap: "round",
+                                strokeLinejoin: "round",
+                                "aria-hidden": "true",
+                                children: mobileMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("path", {
+                                    d: "M18 6L6 18M6 6l12 12"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Navbar.js",
+                                    lineNumber: 49,
+                                    columnNumber: 15
+                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("path", {
+                                    d: "M3 6h18M3 12h18M3 18h18"
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Navbar.js",
+                                    lineNumber: 51,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/components/Navbar.js",
+                                lineNumber: 47,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Navbar.js",
+                        lineNumber: 39,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
+                        className: "hidden md:flex md:space-x-6 text-sm uppercase tracking-wider",
+                        children: navItems.map((item)=>{
+                            const active = router.pathname === item.href;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                href: item.href,
+                                className: `group relative inline-block px-1 py-2 ${active ? 'text-amber-400' : ''}`,
+                                "aria-current": active ? 'page' : undefined,
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                        className: "relative z-10",
+                                        children: item.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Navbar.js",
+                                        lineNumber: 66,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                        className: `absolute left-0 -bottom-0.5 h-[3px] w-full bg-amber-400 origin-left transform transition-transform duration-300 ${active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Navbar.js",
+                                        lineNumber: 67,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, item.href, true, {
+                                fileName: "[project]/components/Navbar.js",
+                                lineNumber: 60,
+                                columnNumber: 15
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/components/Navbar.js",
+                        lineNumber: 56,
+                        columnNumber: 9
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/Navbar.js",
-                    lineNumber: 23,
-                    columnNumber: 9
-                }, this),
-                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
-                    className: "space-x-6 text-sm uppercase tracking-wider",
-                    children: [
-                        {
-                            href: '/about',
-                            label: 'About'
-                        },
-                        {
-                            href: '/services',
-                            label: 'Services'
-                        },
-                        {
-                            href: '/projects',
-                            label: 'Projects'
-                        },
-                        {
-                            href: '/contact',
-                            label: 'Contact'
-                        }
-                    ].map((item)=>{
-                        const active = router.pathname === item.href;
-                        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
-                            href: item.href,
-                            className: `group relative inline-block px-1 py-2 ${active ? 'text-amber-400' : ''}`,
-                            "aria-current": active ? 'page' : undefined,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: "relative z-10",
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Navbar.js",
+                lineNumber: 34,
+                columnNumber: 7
+            }, this),
+            mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                className: "md:hidden border-t border-slate-200 bg-white/95 shadow-sm",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("nav", {
+                    className: "container py-3",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("ul", {
+                        className: "space-y-1",
+                        children: navItems.map((item)=>{
+                            const active = router.pathname === item.href;
+                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("li", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                    href: item.href,
+                                    className: `block rounded-md px-3 py-2 text-sm font-semibold uppercase tracking-wide transition ${active ? 'bg-amber-50 text-amber-500' : 'text-slate-800 hover:bg-slate-100'}`,
+                                    "aria-current": active ? 'page' : undefined,
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 41,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
-                                    className: `absolute left-0 -bottom-0.5 h-[3px] w-full bg-amber-400 origin-left transform transition-transform duration-300 ${active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`
-                                }, void 0, false, {
-                                    fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 42,
-                                    columnNumber: 17
+                                    lineNumber: 82,
+                                    columnNumber: 21
                                 }, this)
-                            ]
-                        }, item.href, true, {
-                            fileName: "[project]/components/Navbar.js",
-                            lineNumber: 35,
-                            columnNumber: 15
-                        }, this);
-                    })
+                            }, item.href, false, {
+                                fileName: "[project]/components/Navbar.js",
+                                lineNumber: 81,
+                                columnNumber: 19
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "[project]/components/Navbar.js",
+                        lineNumber: 77,
+                        columnNumber: 13
+                    }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Navbar.js",
-                    lineNumber: 26,
-                    columnNumber: 9
+                    lineNumber: 76,
+                    columnNumber: 11
                 }, this)
-            ]
-        }, void 0, true, {
-            fileName: "[project]/components/Navbar.js",
-            lineNumber: 22,
-            columnNumber: 7
-        }, this)
-    }, void 0, false, {
+            }, void 0, false, {
+                fileName: "[project]/components/Navbar.js",
+                lineNumber: 75,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
         fileName: "[project]/components/Navbar.js",
-        lineNumber: 21,
+        lineNumber: 33,
         columnNumber: 5
     }, this);
 }
@@ -405,37 +502,85 @@ function Services() {
     const services = [
         {
             id: 1,
-            icon: '⚙️',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/01.png",
+                alt: "Mechanical engineering design icon",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 9,
+                columnNumber: 13
+            }, this),
             title: 'Mechanical Engineering Design',
             description: 'HVAC, ventilation, plumbing, fire protection, and utility systems designed for comfort, safety, and efficiency.'
         },
         {
             id: 2,
-            icon: '⚡',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/02.png",
+                alt: "Electrical engineering design icon",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 15,
+                columnNumber: 13
+            }, this),
             title: 'Electrical Engineering Design',
             description: 'Power distribution, lighting, backup systems, renewable energy integration, and smart building technologies.'
         },
         {
             id: 3,
-            icon: '💧',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/03.png",
+                alt: "Plumbing engineering design icon",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 21,
+                columnNumber: 13
+            }, this),
             title: 'Plumbing Engineering Design',
             description: 'Water supply, drainage, sanitation, rainwater, and wastewater design that meets regulatory standards.'
         },
         {
             id: 4,
-            icon: '👥',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/04.png",
+                alt: "Consulting professional providing MEP engineering expertise and strategic solutions",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 27,
+                columnNumber: 13
+            }, this),
             title: 'MEP Consultancy',
             description: 'Strategic advice and engineering solutions that align design, budget, sustainability, and operational goals.'
         },
         {
             id: 5,
-            icon: '📋',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/05.png",
+                alt: "Project coordination icon",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this),
             title: 'Project Coordination',
             description: 'Seamless collaboration across consultants, contractors, and stakeholders for efficient delivery.'
         },
         {
             id: 6,
-            icon: '✓',
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                src: "/images/services-icons/06.png",
+                alt: "Turnkey delivery icon",
+                className: "w-24 h-24 object-contain"
+            }, void 0, false, {
+                fileName: "[project]/pages/services.js",
+                lineNumber: 39,
+                columnNumber: 13
+            }, this),
             title: 'Turnkey Delivery',
             description: 'From concept and design to construction support and commissioning, we manage the entire MEP process.'
         }
@@ -444,34 +589,39 @@ function Services() {
         {
             id: 1,
             title: 'Discover',
-            description: 'We understand your goals, challenges, and project requirements.'
+            description: 'We understand your goals, requirements, and project challenges.',
+            icon: '/images/services-icons/Discover.png'
         },
         {
             id: 2,
             title: 'Design',
-            description: 'We develop smart, efficient MEP systems tailored to your project.'
+            description: 'We develop smart, efficient MEP systems tailored to your project.',
+            icon: '/images/services-icons/Design.png'
         },
         {
             id: 3,
             title: 'Develop',
-            description: 'Detailed design, specifications, and compliance documentation.'
+            description: 'Detailed design, coordination, and compliance at every step.',
+            icon: '/images/services-icons/Develop.png'
         },
         {
             id: 4,
             title: 'Deliver',
-            description: 'Construction support and on-site coordination for smooth execution.'
+            description: 'Construction support and on-site coordination for smooth execution.',
+            icon: '/images/services-icons/Deliver.png'
         },
         {
             id: 5,
             title: 'Commission',
-            description: 'Testing, commissioning, and handover for optimal performance.'
+            description: 'Testing, commissioning, and handover for optimal performance.',
+            icon: '/images/services-icons/Commission.png'
         }
     ];
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navbar$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/services.js",
-                lineNumber: 55,
+                lineNumber: 80,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("main", {
@@ -489,7 +639,7 @@ function Services() {
                                             children: "OUR SERVICES"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/services.js",
-                                            lineNumber: 61,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h1", {
@@ -497,7 +647,7 @@ function Services() {
                                             children: "Integrated MEP Engineering Solutions That Deliver Value"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/services.js",
-                                            lineNumber: 62,
+                                            lineNumber: 87,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -505,13 +655,13 @@ function Services() {
                                             children: "We provide end-to-end MEP engineering services that combine technical excellence, practical insight, and innovative design to create efficient, sustainable, and future-ready buildings."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/services.js",
-                                            lineNumber: 65,
+                                            lineNumber: 90,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/services.js",
-                                    lineNumber: 60,
+                                    lineNumber: 85,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -522,23 +672,23 @@ function Services() {
                                         className: "w-full h-full object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 70,
+                                        lineNumber: 95,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/pages/services.js",
-                                    lineNumber: 69,
+                                    lineNumber: 94,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/services.js",
-                            lineNumber: 59,
+                            lineNumber: 84,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/services.js",
-                        lineNumber: 58,
+                        lineNumber: 83,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -552,7 +702,7 @@ function Services() {
                                         children: "What We Do"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 78,
+                                        lineNumber: 103,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -560,13 +710,13 @@ function Services() {
                                         children: "Our services cover the full spectrum of MEP engineering, from concept through commissioning. We work closely with clients and project teams to deliver systems that perform."
                                     }, void 0, false, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 79,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/services.js",
-                                lineNumber: 77,
+                                lineNumber: 102,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -579,7 +729,7 @@ function Services() {
                                                 children: service.icon
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 87,
+                                                lineNumber: 112,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -590,7 +740,7 @@ function Services() {
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 88,
+                                                lineNumber: 113,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
@@ -598,7 +748,7 @@ function Services() {
                                                 children: service.title
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 89,
+                                                lineNumber: 114,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -606,7 +756,7 @@ function Services() {
                                                 children: service.description
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 90,
+                                                lineNumber: 115,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
@@ -618,37 +768,38 @@ function Services() {
                                                         children: "→"
                                                     }, void 0, false, {
                                                         fileName: "[project]/pages/services.js",
-                                                        lineNumber: 92,
+                                                        lineNumber: 117,
                                                         columnNumber: 30
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 91,
+                                                lineNumber: 116,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, service.id, true, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 86,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/pages/services.js",
-                                lineNumber: 84,
+                                lineNumber: 109,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/services.js",
-                        lineNumber: 76,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
-                        className: "container mx-auto py-16",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                className: "grid gap-10 lg:grid-cols-2 items-center mb-12",
+                        className: "bg-slate-100 py-16",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                            className: "container mx-auto",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                className: "grid gap-10 lg:grid-cols-[1.05fr_2fr] items-start",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                         children: [
@@ -657,101 +808,146 @@ function Services() {
                                                 children: "OUR PROCESS"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 103,
-                                                columnNumber: 15
+                                                lineNumber: 129,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h2", {
-                                                className: "text-4xl md:text-5xl font-bold text-slate-900 mb-4 leading-tight",
-                                                children: "A Collaborative Approach From Start To Finish"
-                                            }, void 0, false, {
+                                                className: "text-4xl font-bold text-slate-900 mb-4 leading-tight",
+                                                children: [
+                                                    "A Collaborative Approach",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                        fileName: "[project]/pages/services.js",
+                                                        lineNumber: 132,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    "From Start To Finish"
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 104,
-                                                columnNumber: 15
+                                                lineNumber: 130,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                className: "text-slate-600 mb-6 leading-relaxed",
+                                                className: "text-slate-600 mb-6 leading-relaxed max-w-md",
                                                 children: "We follow a streamlined process that ensures clarity, efficiency, and quality at every stage of your project."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 107,
-                                                columnNumber: 15
+                                                lineNumber: 135,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
                                                 href: "/contact",
-                                                className: "inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition",
-                                                children: "Let's Work Together →"
-                                            }, void 0, false, {
+                                                className: "inline-flex items-center gap-3 rounded-md border border-slate-400 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50",
+                                                children: [
+                                                    "Let's Work Together",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("span", {
+                                                        "aria-hidden": "true",
+                                                        children: "→"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/services.js",
+                                                        lineNumber: 143,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/pages/services.js",
-                                                lineNumber: 110,
-                                                columnNumber: 15
+                                                lineNumber: 138,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 102,
-                                        columnNumber: 13
+                                        lineNumber: 128,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "text-4xl text-center text-amber-400",
-                                        children: "🔍"
-                                    }, void 0, false, {
+                                        className: "relative",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                className: "hidden lg:block absolute left-[8%] right-[8%] top-10 border-t border-dashed border-slate-300"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/services.js",
+                                                lineNumber: 148,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                className: "relative grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-5",
+                                                children: processSteps.map((step)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
+                                                                className: "mb-5 inline-flex h-20 w-20 items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-slate-200",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                                                    src: step.icon,
+                                                                    alt: step.title,
+                                                                    className: "h-9 w-9 object-contain"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/pages/services.js",
+                                                                    lineNumber: 153,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/pages/services.js",
+                                                                lineNumber: 152,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                                className: "mb-2 text-2xl font-bold text-amber-500",
+                                                                children: [
+                                                                    "0",
+                                                                    step.id
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/pages/services.js",
+                                                                lineNumber: 155,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
+                                                                className: "mb-2 text-2xl font-bold text-slate-900",
+                                                                children: step.title
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/pages/services.js",
+                                                                lineNumber: 156,
+                                                                columnNumber: 23
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
+                                                                className: "text-sm leading-7 text-slate-600",
+                                                                children: step.description
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/pages/services.js",
+                                                                lineNumber: 157,
+                                                                columnNumber: 23
+                                                            }, this)
+                                                        ]
+                                                    }, step.id, true, {
+                                                        fileName: "[project]/pages/services.js",
+                                                        lineNumber: 151,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/services.js",
+                                                lineNumber: 149,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/pages/services.js",
-                                        lineNumber: 114,
-                                        columnNumber: 13
+                                        lineNumber: 147,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/services.js",
-                                lineNumber: 101,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                className: "grid gap-6 md:grid-cols-5",
-                                children: processSteps.map((step)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
-                                        className: "text-center",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                className: "text-amber-500 font-bold text-xl mb-2",
-                                                children: [
-                                                    "0",
-                                                    step.id
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "[project]/pages/services.js",
-                                                lineNumber: 120,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("h3", {
-                                                className: "font-bold text-slate-900 mb-2",
-                                                children: step.title
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/services.js",
-                                                lineNumber: 121,
-                                                columnNumber: 17
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
-                                                className: "text-sm text-slate-600",
-                                                children: step.description
-                                            }, void 0, false, {
-                                                fileName: "[project]/pages/services.js",
-                                                lineNumber: 122,
-                                                columnNumber: 17
-                                            }, this)
-                                        ]
-                                    }, step.id, true, {
-                                        fileName: "[project]/pages/services.js",
-                                        lineNumber: 119,
-                                        columnNumber: 15
-                                    }, this))
-                            }, void 0, false, {
-                                fileName: "[project]/pages/services.js",
-                                lineNumber: 117,
-                                columnNumber: 11
+                                lineNumber: 127,
+                                columnNumber: 13
                             }, this)
-                        ]
-                    }, void 0, true, {
+                        }, void 0, false, {
+                            fileName: "[project]/pages/services.js",
+                            lineNumber: 126,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/pages/services.js",
-                        lineNumber: 100,
+                        lineNumber: 125,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("section", {
@@ -764,10 +960,18 @@ function Services() {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
                                             className: "text-5xl",
-                                            children: "🚀"
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("img", {
+                                                src: "/images/services-icons/Delivered.png",
+                                                alt: "Plumbing engineering design icon",
+                                                className: "w-24 h-24 object-contain"
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/services.js",
+                                                lineNumber: 170,
+                                                columnNumber: 41
+                                            }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/pages/services.js",
-                                            lineNumber: 132,
+                                            lineNumber: 170,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("div", {
@@ -777,7 +981,7 @@ function Services() {
                                                     children: "Have a Project in Mind?"
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/services.js",
-                                                    lineNumber: 134,
+                                                    lineNumber: 172,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("p", {
@@ -785,19 +989,19 @@ function Services() {
                                                     children: "Let's discuss how we can help you design better building systems."
                                                 }, void 0, false, {
                                                     fileName: "[project]/pages/services.js",
-                                                    lineNumber: 135,
+                                                    lineNumber: 173,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/pages/services.js",
-                                            lineNumber: 133,
+                                            lineNumber: 171,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/services.js",
-                                    lineNumber: 131,
+                                    lineNumber: 169,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])("a", {
@@ -806,40 +1010,40 @@ function Services() {
                                     children: "Schedule a Consultation →"
                                 }, void 0, false, {
                                     fileName: "[project]/pages/services.js",
-                                    lineNumber: 138,
+                                    lineNumber: 176,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/services.js",
-                            lineNumber: 130,
+                            lineNumber: 168,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/services.js",
-                        lineNumber: 129,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/services.js",
-                lineNumber: 56,
+                lineNumber: 81,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ContactInfoPanel$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/services.js",
-                lineNumber: 145,
+                lineNumber: 183,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$externals$5d2f$react$2f$jsx$2d$dev$2d$runtime__$5b$external$5d$__$28$react$2f$jsx$2d$dev$2d$runtime$2c$__cjs$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$ssr$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/services.js",
-                lineNumber: 146,
+                lineNumber: 184,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/pages/services.js",
-        lineNumber: 54,
+        lineNumber: 79,
         columnNumber: 5
     }, this);
 }

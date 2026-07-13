@@ -5,23 +5,14 @@ self.__BUILD_MANIFEST = {
   "/_error": [
     "static/chunks/pages/_error.js"
   ],
-  "/projects": [
-    "static/chunks/pages/projects.js"
-  ],
-  "/projects/ashesi-university": [
-    "static/chunks/pages/projects/ashesi-university.js"
+  "/about": [
+    "static/chunks/pages/about.js"
   ],
   "/projects/digital-realty": [
     "static/chunks/pages/projects/digital-realty.js"
   ],
-  "/projects/google-ghana": [
-    "static/chunks/pages/projects/google-ghana.js"
-  ],
-  "/projects/icgc-christ-temple-east": [
-    "static/chunks/pages/projects/icgc-christ-temple-east.js"
-  ],
-  "/projects/the-nova": [
-    "static/chunks/pages/projects/the-nova.js"
+  "/services": [
+    "static/chunks/pages/services.js"
   ],
   "__rewrites": {
     "afterFiles": [],
