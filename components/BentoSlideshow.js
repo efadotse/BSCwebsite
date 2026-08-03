@@ -37,7 +37,9 @@ export default function BentoSlideshow({ projects = [] }) {
               'lg:col-span-1',
               'lg:col-span-1',
             ]
-            const imageUrl = p.image ? `/images/projects/${p.image}` : null
+            const imageUrl = p.image
+              ? (p.image.startsWith('/') ? p.image : `/images/projects/${p.image}`)
+              : null
             const cardContent = (
               <div className="relative w-full h-full bg-gray-800">
                 {imageUrl ? (
@@ -45,6 +47,9 @@ export default function BentoSlideshow({ projects = [] }) {
                     src={imageUrl}
                     alt={p.title}
                     className="absolute inset-0 h-full w-full object-cover transition-transform duration-300"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none'
+                    }}
                   />
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-gray-700 to-gray-900" />

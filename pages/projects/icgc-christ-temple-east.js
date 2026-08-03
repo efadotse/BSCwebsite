@@ -42,7 +42,7 @@ const scope = [
   },
   {
     title: 'MEP Coordination',
-    body: '3D BIM coordination and clash detection for seamless integration and efficient project delivery.',
+    body: 'Collaborative coordination with architects, engineers, and contractors for seamless project delivery.',
   },
   {
     title: 'Acoustics & AV Systems',

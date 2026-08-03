@@ -58,6 +58,21 @@ export default function Projects(){
               )
             ))}
           </div>
+
+          <section className="bg-blue-900 text-white py-16 rounded-3xl container mx-auto my-12">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-8 px-8">
+              <div className="flex items-center gap-6">
+                <div className="text-5xl"><img src="/images/services-icons/Delivered.png" alt="Plumbing engineering design icon" className="w-24 h-24 object-contain" /></div>
+                <div>
+                  <h2 className="text-3xl font-bold mb-2">Have a Project in Mind?</h2>
+                  <p className="text-blue-100">Let's discuss how we can help you design better building systems.</p>
+                </div>
+              </div>
+              <a href="/contact" className="inline-block px-6 py-3 bg-amber-500 text-slate-900 font-bold rounded-lg hover:bg-amber-400 transition whitespace-nowrap">
+                Schedule a Consultation →
+              </a>
+            </div>
+          </section>
         </section>
       </main>
       <Footer />

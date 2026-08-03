@@ -8,8 +8,14 @@ self.__BUILD_MANIFEST = {
   "/about": [
     "static/chunks/pages/about.js"
   ],
-  "/projects/digital-realty": [
-    "static/chunks/pages/projects/digital-realty.js"
+  "/contact": [
+    "static/chunks/pages/contact.js"
+  ],
+  "/projects": [
+    "static/chunks/pages/projects.js"
+  ],
+  "/projects/ashesi-university": [
+    "static/chunks/pages/projects/ashesi-university.js"
   ],
   "/services": [
     "static/chunks/pages/services.js"

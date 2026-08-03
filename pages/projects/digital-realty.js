@@ -38,7 +38,7 @@ const scope = [
   },
   {
     title: 'MEP Coordination',
-    body: 'BIM-based coordination with architects, structural engineers, and contractors for seamless delivery.',
+    body: '3D BIM coordination and clash detection with architects, structural engineers, and contractors for seamless integration and efficient project delivery.',
   },
   {
     title: 'Sustainability',

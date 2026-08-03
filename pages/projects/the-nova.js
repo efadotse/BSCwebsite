@@ -42,7 +42,7 @@ const scope = [
   },
   {
     title: 'MEP Coordination',
-    body: 'Coordinated BIM-based design and collaboration for clash-free construction and seamless delivery.',
+    body: 'Collaborative coordination with architects, engineers, and contractors for seamless project delivery.',
   },
   {
     title: 'Sustainability',

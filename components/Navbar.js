@@ -17,6 +17,8 @@ export default function Navbar() {
   const isHome = router.pathname === '/' 
   const isAbout = router.pathname === '/about'
   const forceDark = !isHome && !isAbout
+  const mergedWithHero = !forceDark && !scrolled
+  const logoSrc = mergedWithHero ? '/images/logo-white.png' : '/images/logo.png'
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -33,7 +35,7 @@ export default function Navbar() {
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${forceDark ? 'bg-white/95 text-slate-900 border-b border-slate-200 shadow-sm' : (scrolled ? 'bg-white/95 text-slate-900 border-b border-slate-200 shadow-sm' : 'bg-transparent text-white')} `}>
       <div className="container flex items-center justify-between py-4">
         <Link href="/" aria-label="Home">
-          <img src="/images/logo.png" alt="BSC" className="h-12 md:h-16 object-contain" />
+          <img src={logoSrc} alt="BSC" className="h-12 md:h-16 object-contain" />
         </Link>
 
         <button

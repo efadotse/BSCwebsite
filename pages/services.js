@@ -8,7 +8,7 @@ export default function Services(){
       id: 1,
       icon: <img src="/images/services-icons/01.png" alt="Mechanical engineering design icon" className="w-24 h-24 object-contain"/>,
       title: 'Mechanical Engineering Design',
-      description: 'HVAC, ventilation, plumbing, fire protection, and utility systems designed for comfort, safety, and efficiency.'
+      description: 'HVAC, ventilation, fire protection, and utility systems designed for comfort, safety, and efficiency.'
     },
     {
       id: 2,
@@ -38,7 +38,7 @@ export default function Services(){
       id: 6,
       icon: <img src="/images/services-icons/06.png" alt="Turnkey delivery icon" className="w-24 h-24 object-contain"/> ,
       title: 'Turnkey Delivery',
-      description: 'From concept and design to construction support and commissioning, we manage the entire MEP process.'
+      description: 'From concept and design stages to construction support and commissioning, we manage the entire MEP process.'
     }
   ]
 
@@ -102,7 +102,7 @@ export default function Services(){
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">What We Do</h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Our services cover the full spectrum of MEP engineering, from concept through commissioning. We work closely with clients and project teams to deliver systems that perform.
+              Our services cover the full spectrum of MEP engineering, from concept through to commissioning. We work closely with clients and project teams to deliver systems that perform optimally.
             </p>
           </div>
 
@@ -139,7 +139,7 @@ export default function Services(){
                   href="/contact"
                   className="inline-flex items-center gap-3 rounded-md border border-slate-400 bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-slate-50"
                 >
-                  Let&apos;s Work Together
+                  Let's Work Together
                   <span aria-hidden="true">→</span>
                 </a>
               </div>

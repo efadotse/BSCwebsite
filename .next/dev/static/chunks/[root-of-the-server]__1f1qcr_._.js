@@ -508,6 +508,8 @@ function Navbar() {
     const isHome = router.pathname === '/';
     const isAbout = router.pathname === '/about';
     const forceDark = !isHome && !isAbout;
+    const mergedWithHero = !forceDark && !scrolled;
+    const logoSrc = mergedWithHero ? '/images/logo-white.png' : '/images/logo.png';
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navbar.useEffect": ()=>{
             const handleScroll = {
@@ -537,17 +539,17 @@ function Navbar() {
                         href: "/",
                         "aria-label": "Home",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/images/logo.png",
+                            src: logoSrc,
                             alt: "BSC",
                             className: "h-12 md:h-16 object-contain"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.js",
-                            lineNumber: 36,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -562,7 +564,7 @@ function Navbar() {
                                 children: "Menu"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 46,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -578,24 +580,24 @@ function Navbar() {
                                     d: "M18 6L6 18M6 6l12 12"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 49,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                     d: "M3 6h18M3 12h18M3 18h18"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 51,
+                                    lineNumber: 53,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 47,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 39,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -612,32 +614,32 @@ function Navbar() {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.js",
-                                        lineNumber: 66,
+                                        lineNumber: 68,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: `absolute left-0 -bottom-0.5 h-[3px] w-full bg-amber-400 origin-left transform transition-transform duration-300 ${active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.js",
-                                        lineNumber: 67,
+                                        lineNumber: 69,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, item.href, true, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 56,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Navbar.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -656,34 +658,34 @@ function Navbar() {
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 82,
+                                    lineNumber: 84,
                                     columnNumber: 21
                                 }, this)
                             }, item.href, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 81,
+                                lineNumber: 83,
                                 columnNumber: 19
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 77,
+                        lineNumber: 79,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Navbar.js",
-                    lineNumber: 76,
+                    lineNumber: 78,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Navbar.js",
-                lineNumber: 75,
+                lineNumber: 77,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Navbar.js",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
@@ -925,6 +927,80 @@ function Projects() {
                             fileName: "[project]/pages/projects.js",
                             lineNumber: 31,
                             columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                            className: "bg-blue-900 text-white py-16 rounded-3xl container mx-auto my-12",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col lg:flex-row items-center justify-between gap-8 px-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "text-5xl",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                    src: "/images/services-icons/Delivered.png",
+                                                    alt: "Plumbing engineering design icon",
+                                                    className: "w-24 h-24 object-contain"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/pages/projects.js",
+                                                    lineNumber: 65,
+                                                    columnNumber: 43
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/pages/projects.js",
+                                                lineNumber: 65,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                                        className: "text-3xl font-bold mb-2",
+                                                        children: "Have a Project in Mind?"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/projects.js",
+                                                        lineNumber: 67,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-blue-100",
+                                                        children: "Let's discuss how we can help you design better building systems."
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/pages/projects.js",
+                                                        lineNumber: 68,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/pages/projects.js",
+                                                lineNumber: 66,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/pages/projects.js",
+                                        lineNumber: 64,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "/contact",
+                                        className: "inline-block px-6 py-3 bg-amber-500 text-slate-900 font-bold rounded-lg hover:bg-amber-400 transition whitespace-nowrap",
+                                        children: "Schedule a Consultation →"
+                                    }, void 0, false, {
+                                        fileName: "[project]/pages/projects.js",
+                                        lineNumber: 71,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/pages/projects.js",
+                                lineNumber: 63,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/pages/projects.js",
+                            lineNumber: 62,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
@@ -939,7 +1015,7 @@ function Projects() {
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/projects.js",
-                lineNumber: 63,
+                lineNumber: 78,
                 columnNumber: 7
             }, this)
         ]

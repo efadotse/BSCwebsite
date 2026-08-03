@@ -508,6 +508,8 @@ function Navbar() {
     const isHome = router.pathname === '/';
     const isAbout = router.pathname === '/about';
     const forceDark = !isHome && !isAbout;
+    const mergedWithHero = !forceDark && !scrolled;
+    const logoSrc = mergedWithHero ? '/images/logo-white.png' : '/images/logo.png';
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Navbar.useEffect": ()=>{
             const handleScroll = {
@@ -537,17 +539,17 @@ function Navbar() {
                         href: "/",
                         "aria-label": "Home",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: "/images/logo.png",
+                            src: logoSrc,
                             alt: "BSC",
                             className: "h-12 md:h-16 object-contain"
                         }, void 0, false, {
                             fileName: "[project]/components/Navbar.js",
-                            lineNumber: 36,
+                            lineNumber: 38,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -562,7 +564,7 @@ function Navbar() {
                                 children: "Menu"
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 46,
+                                lineNumber: 48,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -578,24 +580,24 @@ function Navbar() {
                                     d: "M18 6L6 18M6 6l12 12"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 49,
+                                    lineNumber: 51,
                                     columnNumber: 15
                                 }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
                                     d: "M3 6h18M3 12h18M3 18h18"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 51,
+                                    lineNumber: 53,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 47,
+                                lineNumber: 49,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 39,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
@@ -612,32 +614,32 @@ function Navbar() {
                                         children: item.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.js",
-                                        lineNumber: 66,
+                                        lineNumber: 68,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: `absolute left-0 -bottom-0.5 h-[3px] w-full bg-amber-400 origin-left transform transition-transform duration-300 ${active ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`
                                     }, void 0, false, {
                                         fileName: "[project]/components/Navbar.js",
-                                        lineNumber: 67,
+                                        lineNumber: 69,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, item.href, true, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 60,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 56,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Navbar.js",
-                lineNumber: 34,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             mobileMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -656,34 +658,34 @@ function Navbar() {
                                     children: item.label
                                 }, void 0, false, {
                                     fileName: "[project]/components/Navbar.js",
-                                    lineNumber: 82,
+                                    lineNumber: 84,
                                     columnNumber: 21
                                 }, this)
                             }, item.href, false, {
                                 fileName: "[project]/components/Navbar.js",
-                                lineNumber: 81,
+                                lineNumber: 83,
                                 columnNumber: 19
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/Navbar.js",
-                        lineNumber: 77,
+                        lineNumber: 79,
                         columnNumber: 13
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/Navbar.js",
-                    lineNumber: 76,
+                    lineNumber: 78,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/Navbar.js",
-                lineNumber: 75,
+                lineNumber: 77,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Navbar.js",
-        lineNumber: 33,
+        lineNumber: 35,
         columnNumber: 5
     }, this);
 }
@@ -1026,7 +1028,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$ind
 var _s = __turbopack_context__.k.signature();
 ;
 ;
-function Hero({ title, subtitle, cta, centered }) {
+const HERO_SLIDE_MS = 7000;
+const HERO_SYNC_KEY = 'bsc-hero-sync-start-ms';
+function Hero({ title, subtitle, cta, centered, variant, eyebrow, secondaryCta, stats, disableAutoRotate }) {
     _s();
     const slides = [
         '/images/hero/slide-1.jpg',
@@ -1039,102 +1043,862 @@ function Hero({ title, subtitle, cta, centered }) {
     const timerRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$index$2e$js__$5b$client$5d$__$28$ecmascript$29$__["useEffect"])({
         "Hero.useEffect": ()=>{
-            timerRef.current = setInterval({
-                "Hero.useEffect": ()=>setIndex({
-                        "Hero.useEffect": (i)=>(i + 1) % slides.length
-                    }["Hero.useEffect"])
-            }["Hero.useEffect"], 7000);
+            if (disableAutoRotate) return;
+            if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+            ;
+            let syncStart = Number(window.localStorage.getItem(HERO_SYNC_KEY));
+            if (!Number.isFinite(syncStart) || syncStart <= 0) {
+                syncStart = Date.now();
+                window.localStorage.setItem(HERO_SYNC_KEY, String(syncStart));
+            }
+            const updateIndex = {
+                "Hero.useEffect.updateIndex": ()=>{
+                    const elapsed = Math.max(0, Date.now() - syncStart);
+                    setIndex(Math.floor(elapsed / HERO_SLIDE_MS) % slides.length);
+                }
+            }["Hero.useEffect.updateIndex"];
+            const handleStorage = {
+                "Hero.useEffect.handleStorage": (event)=>{
+                    if (event.key !== HERO_SYNC_KEY || !event.newValue) return;
+                    const parsed = Number(event.newValue);
+                    if (!Number.isFinite(parsed) || parsed <= 0) return;
+                    syncStart = parsed;
+                    updateIndex();
+                }
+            }["Hero.useEffect.handleStorage"];
+            updateIndex();
+            timerRef.current = setInterval(updateIndex, 250);
+            window.addEventListener('storage', handleStorage);
             return ({
-                "Hero.useEffect": ()=>clearInterval(timerRef.current)
+                "Hero.useEffect": ()=>{
+                    clearInterval(timerRef.current);
+                    window.removeEventListener('storage', handleStorage);
+                }
             })["Hero.useEffect"];
         }
     }["Hero.useEffect"], [
+        disableAutoRotate,
         slides.length
     ]);
     function goTo(i) {
         setIndex(i);
-        if (timerRef.current) clearInterval(timerRef.current);
-        timerRef.current = setInterval(()=>setIndex((s)=>(s + 1) % slides.length), 7000);
+        if (disableAutoRotate) return;
+        if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+        ;
+        const syncStart = Date.now() - i * HERO_SLIDE_MS;
+        window.localStorage.setItem(HERO_SYNC_KEY, String(syncStart));
+    }
+    const heroStats = [
+        {
+            value: '30+',
+            label: 'Years Experience',
+            icon: 'team'
+        },
+        {
+            value: '50+',
+            label: 'Projects Delivered',
+            icon: 'projects'
+        },
+        {
+            value: '50+',
+            label: 'Happy Clients',
+            icon: 'award'
+        },
+        {
+            value: '3',
+            label: 'Countries Served',
+            icon: 'globe'
+        }
+    ];
+    const currentSlide = String(index + 1).padStart(2, '0');
+    const totalSlides = String(slides.length).padStart(2, '0');
+    const titleParts = typeof title === 'string' ? title.split('. ') : [];
+    const hasSplitTitle = titleParts.length > 1;
+    const primaryTitle = hasSplitTitle ? `${titleParts[0]}.` : title;
+    const secondaryTitle = hasSplitTitle ? titleParts.slice(1).join('. ') : '';
+    const isAboutVariant = variant === 'about';
+    const aboutStats = stats || [
+        {
+            value: '500+',
+            label: 'Projects Delivered',
+            icon: 'projects'
+        },
+        {
+            value: '20+',
+            label: 'Years Experience',
+            icon: 'team'
+        },
+        {
+            value: '15',
+            label: 'Countries Served',
+            icon: 'globe'
+        },
+        {
+            value: '40+',
+            label: 'Expert Engineers',
+            icon: 'engineer'
+        },
+        {
+            value: '98%',
+            label: 'Client Satisfaction',
+            icon: 'award'
+        }
+    ];
+    function statIcon(type) {
+        if (type === 'projects') {
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "1.8",
+                className: "h-6 w-6",
+                "aria-hidden": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M4 20h16"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 85,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M7 20V8h10v12"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 86,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M10 8V4h4v4"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 87,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M10 12h4M10 16h4"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 88,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 84,
+                columnNumber: 9
+            }, this);
+        }
+        if (type === 'team') {
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "1.8",
+                className: "h-6 w-6",
+                "aria-hidden": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "9",
+                        cy: "9",
+                        r: "3"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 95,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "17",
+                        cy: "9",
+                        r: "2"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 96,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M4 19c0-3 2.5-5 5-5s5 2 5 5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M15 19c.2-1.8 1.5-3 3-3 1.5 0 2.7 1.2 3 3"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 98,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 94,
+                columnNumber: 9
+            }, this);
+        }
+        if (type === 'globe') {
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "1.8",
+                className: "h-6 w-6",
+                "aria-hidden": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "12",
+                        cy: "12",
+                        r: "9"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 105,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M3 12h18"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 106,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M12 3a14 14 0 0 1 0 18"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 107,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M12 3a14 14 0 0 0 0 18"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 108,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 104,
+                columnNumber: 9
+            }, this);
+        }
+        if (type === 'engineer') {
+            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                viewBox: "0 0 24 24",
+                fill: "none",
+                stroke: "currentColor",
+                strokeWidth: "1.8",
+                className: "h-6 w-6",
+                "aria-hidden": "true",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M7 9l5-5 5 5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 115,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M9 10h6"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 116,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                        cx: "12",
+                        cy: "13",
+                        r: "2.5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 117,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                        d: "M6 20c0-3.2 2.7-5.5 6-5.5s6 2.3 6 5.5"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 118,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 114,
+                columnNumber: 9
+            }, this);
+        }
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+            viewBox: "0 0 24 24",
+            fill: "none",
+            stroke: "currentColor",
+            strokeWidth: "1.8",
+            className: "h-6 w-6",
+            "aria-hidden": "true",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
+                    cx: "12",
+                    cy: "12",
+                    r: "8"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 124,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                    d: "M12 7l1.6 3.3 3.6.5-2.6 2.5.6 3.6-3.2-1.7-3.2 1.7.6-3.6-2.6-2.5 3.6-.5z"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 125,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Hero.js",
+            lineNumber: 123,
+            columnNumber: 7
+        }, this);
+    }
+    if (centered) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "hero-full relative overflow-hidden pt-20 pb-16 md:pb-20",
+            style: {
+                alignItems: 'center'
+            },
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$HeroSlider$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                    images: slides,
+                    activeIndex: index
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 136,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "container relative py-8 text-center md:py-10",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mx-auto md:w-7/12 lg:w-6/12",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "heading-display mb-6 text-5xl font-extrabold text-white md:text-7xl",
+                                children: title
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 139,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "mb-8 text-lg text-white/80 md:text-xl",
+                                children: subtitle
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 140,
+                                columnNumber: 13
+                            }, this),
+                            cta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: cta.href,
+                                className: "inline-block bg-brand px-6 py-3 tracking-wide text-white",
+                                children: cta.label
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 141,
+                                columnNumber: 21
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 138,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 137,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 transform gap-3 px-6 md:bottom-10",
+                    children: slides.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                            onClick: ()=>goTo(i),
+                            "aria-label": `Go to slide ${i + 1}`,
+                            className: `h-3 w-3 rounded-full focus:outline-none ${i === index ? 'bg-white' : 'bg-white/40 hover:bg-white/70'}`
+                        }, i, false, {
+                            fileName: "[project]/components/Hero.js",
+                            lineNumber: 147,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 145,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Hero.js",
+            lineNumber: 132,
+            columnNumber: 7
+        }, this);
+    }
+    if (isAboutVariant) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+            className: "relative h-screen w-full overflow-hidden",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$HeroSlider$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
+                    images: slides,
+                    activeIndex: index
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 162,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 bg-gradient-to-r from-[#06122de3] via-[#0a204080] to-[#0e2c4614]"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 163,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "absolute inset-0 bg-gradient-to-t from-[#06122dd9] via-[#06122d42] to-transparent"
+                }, void 0, false, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 164,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col px-6 pb-10 pt-20 md:px-10 md:pb-12 md:pt-24 lg:px-12 lg:pb-14 lg:pt-28",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex-1 pt-4 md:pt-10",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex h-full items-start justify-between gap-6",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "max-w-2xl border-l-2 border-white/70 pl-5 md:pl-7",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "mb-5 text-xs font-semibold uppercase tracking-[0.34em] text-amber-300",
+                                                children: eyebrow || 'Who We Are'
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 170,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "mb-5 max-w-xl text-4xl font-extrabold leading-[0.96] text-white md:text-6xl",
+                                                children: title
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 171,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "mb-8 max-w-lg text-sm leading-relaxed text-white md:text-lg",
+                                                children: subtitle
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 172,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-wrap gap-4",
+                                                children: [
+                                                    cta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: cta.href,
+                                                        className: "inline-flex items-center rounded-xl bg-blue-600 px-7 py-3 text-sm font-semibold text-white transition hover:bg-blue-500",
+                                                        children: cta.label
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Hero.js",
+                                                        lineNumber: 174,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    secondaryCta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: secondaryCta.href,
+                                                        className: "inline-flex items-center rounded-xl border border-white/60 bg-white/5 px-7 py-3 text-sm font-semibold text-white transition hover:bg-white/15",
+                                                        children: secondaryCta.label
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/components/Hero.js",
+                                                        lineNumber: 175,
+                                                        columnNumber: 36
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 173,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Hero.js",
+                                        lineNumber: 169,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "hidden h-full items-start pt-4 pr-2 md:flex lg:pt-2",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-col items-center gap-3 text-white/85",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold tracking-[0.2em]",
+                                                    children: currentSlide
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 181,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-28 w-px bg-white/30"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 182,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex flex-col gap-3",
+                                                    children: slides.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                            onClick: ()=>goTo(i),
+                                                            "aria-label": `Go to slide ${i + 1}`,
+                                                            className: `h-2.5 w-2.5 rounded-full transition ${i === index ? 'bg-white' : 'bg-white/35 hover:bg-white/70'}`
+                                                        }, i, false, {
+                                                            fileName: "[project]/components/Hero.js",
+                                                            lineNumber: 185,
+                                                            columnNumber: 23
+                                                        }, this))
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 183,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-12 w-px bg-white/20"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 193,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-sm font-semibold tracking-[0.2em]",
+                                                    children: totalSlides
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 194,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 180,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/components/Hero.js",
+                                        lineNumber: 179,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 168,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.js",
+                            lineNumber: 167,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-3 rounded-2xl border border-slate-200/60 bg-white shadow-2xl shadow-slate-900/20 md:mt-4",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: `grid grid-cols-2 ${aboutStats.length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'}`,
+                                children: aboutStats.map((stat, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: `px-5 py-6 text-center ${i > 0 ? 'md:border-l md:border-slate-200' : ''} ${i % 2 === 1 ? 'border-l border-slate-200 md:border-l-0' : ''}`,
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "mx-auto mb-3 inline-flex h-10 w-10 items-center justify-center text-blue-600",
+                                                children: statIcon(stat.icon)
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 204,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-4xl font-bold leading-none text-slate-900",
+                                                children: stat.value
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 205,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "mt-2 text-xs font-medium text-slate-500",
+                                                children: stat.label
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 206,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, stat.label, true, {
+                                        fileName: "[project]/components/Hero.js",
+                                        lineNumber: 203,
+                                        columnNumber: 17
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/components/Hero.js",
+                                lineNumber: 201,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.js",
+                            lineNumber: 200,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/components/Hero.js",
+                    lineNumber: 166,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/components/Hero.js",
+            lineNumber: 161,
+            columnNumber: 7
+        }, this);
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "hero-full relative overflow-hidden pt-20",
+        className: "relative h-screen w-full overflow-hidden",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$HeroSlider$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
                 images: slides,
                 activeIndex: index
             }, void 0, false, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 28,
+                lineNumber: 218,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `container relative ${centered ? 'text-center' : ''}`,
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "md:pt-16 lg:pt-24",
-                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: `md:w-7/12 lg:w-6/12 ${centered ? 'mx-auto' : ''}`,
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                className: "heading-display text-5xl md:text-7xl font-extrabold mb-6 text-white",
-                                children: title
-                            }, void 0, false, {
-                                fileName: "[project]/components/Hero.js",
-                                lineNumber: 32,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-lg md:text-xl text-white/80 mb-8",
-                                children: subtitle
-                            }, void 0, false, {
-                                fileName: "[project]/components/Hero.js",
-                                lineNumber: 33,
-                                columnNumber: 13
-                            }, this),
-                            cta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                href: cta.href,
-                                className: "inline-block px-6 py-3 bg-brand text-white tracking-wide",
-                                children: cta.label
-                            }, void 0, false, {
-                                fileName: "[project]/components/Hero.js",
-                                lineNumber: 34,
-                                columnNumber: 21
-                            }, this)
-                        ]
-                    }, void 0, true, {
+                className: "absolute inset-0 bg-gradient-to-r from-[#07142db8] via-[#0a1f4673] to-[#0b23461a]"
+            }, void 0, false, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 219,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-gradient-to-t from-[#07142dc7] via-[#07142d33] to-transparent"
+            }, void 0, false, {
+                fileName: "[project]/components/Hero.js",
+                lineNumber: 220,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 mx-auto flex h-full w-full max-w-7xl flex-col px-6 pb-4 pt-20 md:px-10 md:pb-6 md:pt-24 lg:px-12 lg:pb-8 lg:pt-28",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex-1 pb-4 pt-2 md:pb-6 md:pt-4 lg:pb-8 lg:pt-6",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex h-full items-start justify-between gap-6",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "max-w-2xl pr-0 md:pr-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mb-5 inline-flex rounded-full bg-blue-500/20 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-blue-200",
+                                            children: "MEP Engineering Excellence"
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 226,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "mb-5 max-w-xl text-4xl font-extrabold leading-[0.98] text-white md:text-5xl lg:text-6xl",
+                                            children: [
+                                                primaryTitle,
+                                                hasSplitTitle && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "block text-blue-400",
+                                                    children: secondaryTitle
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 231,
+                                                    columnNumber: 35
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 229,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mb-6 max-w-lg text-sm leading-relaxed text-white/85 md:text-base lg:text-lg",
+                                            children: subtitle
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 233,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex flex-wrap gap-4",
+                                            children: [
+                                                cta && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: cta.href,
+                                                    className: "inline-flex items-center rounded-full bg-blue-600 px-7 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-950/40 transition hover:bg-blue-500",
+                                                    children: cta.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 235,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: "/contact",
+                                                    className: "inline-flex items-center rounded-full border border-white/50 bg-white/5 px-7 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/15",
+                                                    children: "Book A Consultation"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/components/Hero.js",
+                                                    lineNumber: 236,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 234,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/components/Hero.js",
+                                    lineNumber: 225,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "hidden h-full items-center pr-2 md:flex",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col items-center gap-4 text-white/85",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-semibold tracking-[0.2em]",
+                                                children: currentSlide
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 242,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "h-36 w-px bg-white/30"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 243,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex flex-col gap-3",
+                                                children: slides.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        onClick: ()=>goTo(i),
+                                                        "aria-label": `Go to slide ${i + 1}`,
+                                                        className: `h-2.5 w-2.5 rounded-full transition ${i === index ? 'bg-white' : 'bg-white/35 hover:bg-white/70'}`
+                                                    }, i, false, {
+                                                        fileName: "[project]/components/Hero.js",
+                                                        lineNumber: 246,
+                                                        columnNumber: 21
+                                                    }, this))
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 244,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "h-20 w-px bg-white/20"
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 254,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "text-sm font-semibold tracking-[0.2em]",
+                                                children: totalSlides
+                                            }, void 0, false, {
+                                                fileName: "[project]/components/Hero.js",
+                                                lineNumber: 255,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/components/Hero.js",
+                                        lineNumber: 241,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/components/Hero.js",
+                                    lineNumber: 240,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/components/Hero.js",
+                            lineNumber: 224,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
                         fileName: "[project]/components/Hero.js",
-                        lineNumber: 31,
-                        columnNumber: 11
+                        lineNumber: 223,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-1 rounded-2xl border border-white/10 bg-[#0a1734bf] backdrop-blur-md md:mb-2",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-2 gap-0 md:grid-cols-4",
+                            children: heroStats.map((stat)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-col items-center justify-center px-4 py-4 text-center text-white even:border-l even:border-white/10 md:px-6 md:py-5 md:[&:not(:first-child)]:border-l md:[&:not(:first-child)]:border-white/10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "mb-2 inline-flex h-8 w-8 items-center justify-center text-blue-300",
+                                            children: statIcon(stat.icon)
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 265,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-2xl font-bold leading-none md:text-3xl",
+                                            children: stat.value
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 266,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "mt-2 text-xs uppercase tracking-[0.14em] text-white/75",
+                                            children: stat.label
+                                        }, void 0, false, {
+                                            fileName: "[project]/components/Hero.js",
+                                            lineNumber: 267,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, stat.label, true, {
+                                    fileName: "[project]/components/Hero.js",
+                                    lineNumber: 264,
+                                    columnNumber: 15
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/components/Hero.js",
+                            lineNumber: 262,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/components/Hero.js",
+                        lineNumber: 261,
+                        columnNumber: 9
                     }, this)
-                }, void 0, false, {
-                    fileName: "[project]/components/Hero.js",
-                    lineNumber: 30,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                ]
+            }, void 0, true, {
                 fileName: "[project]/components/Hero.js",
-                lineNumber: 29,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-3",
-                children: slides.map((_, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>goTo(i),
-                        "aria-label": `Go to slide ${i + 1}`,
-                        className: `w-3 h-3 rounded-full focus:outline-none ${i === index ? 'bg-white' : 'bg-white/40 hover:bg-white/70'}`
-                    }, i, false, {
-                        fileName: "[project]/components/Hero.js",
-                        lineNumber: 41,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/components/Hero.js",
-                lineNumber: 39,
+                lineNumber: 222,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/Hero.js",
-        lineNumber: 27,
+        lineNumber: 217,
         columnNumber: 5
     }, this);
 }
@@ -1172,15 +1936,47 @@ function About() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Hero$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {
-                title: "Who We Are",
+                variant: "about",
+                title: "Engineering Partners Behind Smarter Buildings.",
                 subtitle: "We are an MEP consulting firm focused on performance and reliability. At Built Services Consult, we turn ambitious visions into reality with innovative engineering solutions tailored to each project's unique needs.",
-                centered: true
+                eyebrow: "Who We Are",
+                cta: {
+                    href: '/contact',
+                    label: 'Meet Our Team'
+                },
+                secondaryCta: {
+                    href: '/projects',
+                    label: 'Our Projects'
+                },
+                stats: [
+                    {
+                        value: '500',
+                        label: 'Projects Delivered',
+                        icon: 'projects'
+                    },
+                    {
+                        value: '30+',
+                        label: 'Years Experience',
+                        icon: 'team'
+                    },
+                    {
+                        value: '3',
+                        label: 'Countries Served',
+                        icon: 'globe'
+                    },
+                    {
+                        value: '98%',
+                        label: 'Client Satisfaction',
+                        icon: 'award'
+                    }
+                ]
             }, void 0, false, {
                 fileName: "[project]/pages/about.js",
                 lineNumber: 10,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "pt-12 md:pt-16",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "container py-16",
@@ -1195,15 +1991,15 @@ function About() {
                                             children: "About Us"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 15,
+                                            lineNumber: 28,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                             className: "text-3xl font-semibold mb-5",
-                                            children: "The Leading MEP Consulting Firm in Ghana"
+                                            children: "A Leading MEP Consulting Firm in Ghana"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 16,
+                                            lineNumber: 29,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1211,13 +2007,13 @@ function About() {
                                             children: "Built Services Consult is a trusted Mechanical, Electrical and Plumbing (MEP) engineering consultancy with a proven track record of delivering high-quality and innovative engineering solutions across various sectors in Ghana and beyond. With over 30 years of experience, we provide HVAC, electrical, fire protection and plumbing engineering services for commercial, residential and institutional projects helping clients achieve efficient, sustainable and code-compliant developments."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 17,
+                                            lineNumber: 30,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/about.js",
-                                    lineNumber: 14,
+                                    lineNumber: 27,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1228,7 +2024,7 @@ function About() {
                                             children: "Our Strategy"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 21,
+                                            lineNumber: 34,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1236,32 +2032,32 @@ function About() {
                                             children: "Integrated MEP Design from Concept to Completion"
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 22,
+                                            lineNumber: 35,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             className: "text-slate-300 leading-relaxed",
-                                            children: "We work alongside architcts, developers and contrctors to create coordinated mechanical, electrical and plumbing systems tailored to each project's specific needs. Through detailed engineering, tehnical expertise and collaborative begin every project by understanding the unique conditions and program requirements, then develop systems that respond to energy, comfort and operational goals. Our work is grounded in clear documentation, collaborative coordination and careful follow-through."
+                                            children: "We work alongside architects, developers and contractors to create coordinated mechanical, electrical and plumbing systems tailored to each project's specific needs. Through detailed engineering, technical expertise and collaborative processes, we begin every project by understanding the unique conditions and program requirements, then develop systems that respond to energy, comfort and operational goals. Our work is grounded in clear documentation, collaborative coordination and careful follow-through."
                                         }, void 0, false, {
                                             fileName: "[project]/pages/about.js",
-                                            lineNumber: 23,
+                                            lineNumber: 36,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/pages/about.js",
-                                    lineNumber: 20,
+                                    lineNumber: 33,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/pages/about.js",
-                            lineNumber: 13,
+                            lineNumber: 26,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/pages/about.js",
-                        lineNumber: 12,
+                        lineNumber: 25,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1275,7 +2071,7 @@ function About() {
                                         children: "Our Team"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 30,
+                                        lineNumber: 43,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1283,13 +2079,13 @@ function About() {
                                         children: "Meet the Team"
                                     }, void 0, false, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 31,
+                                        lineNumber: 44,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/about.js",
-                                lineNumber: 29,
+                                lineNumber: 42,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1304,7 +2100,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 35,
+                                                lineNumber: 48,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1312,7 +2108,7 @@ function About() {
                                                 children: "Senior MEP Consultant"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 36,
+                                                lineNumber: 49,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1320,13 +2116,13 @@ function About() {
                                                 children: "Experienced in high-performance HVAC and electrical design for complex commercial projects."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 37,
+                                                lineNumber: 50,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 34,
+                                        lineNumber: 47,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1338,7 +2134,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 40,
+                                                lineNumber: 53,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1346,7 +2142,7 @@ function About() {
                                                 children: "Project Coordination Lead"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 41,
+                                                lineNumber: 54,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1354,13 +2150,13 @@ function About() {
                                                 children: "Focused on seamless collaboration between architects, engineers and site teams."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 42,
+                                                lineNumber: 55,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 39,
+                                        lineNumber: 52,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1372,7 +2168,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 45,
+                                                lineNumber: 58,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1380,7 +2176,7 @@ function About() {
                                                 children: "Electrical Systems Engineer"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 46,
+                                                lineNumber: 59,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1388,13 +2184,13 @@ function About() {
                                                 children: "Helps clients achieve energy efficiency, occupant comfort and lifecycle value."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 47,
+                                                lineNumber: 60,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 44,
+                                        lineNumber: 57,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1406,7 +2202,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 50,
+                                                lineNumber: 63,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1414,7 +2210,7 @@ function About() {
                                                 children: "Mechanical Systems Engineer"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 51,
+                                                lineNumber: 64,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1422,13 +2218,13 @@ function About() {
                                                 children: "Specialized in water distribution, drainage and sanitary systems design."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 52,
+                                                lineNumber: 65,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 49,
+                                        lineNumber: 62,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1440,7 +2236,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 55,
+                                                lineNumber: 68,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1448,7 +2244,7 @@ function About() {
                                                 children: "HVAC Design Lead"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 56,
+                                                lineNumber: 69,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1456,13 +2252,13 @@ function About() {
                                                 children: "Expert in comfort conditioning and ventilation systems for diverse building types."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 57,
+                                                lineNumber: 70,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 54,
+                                        lineNumber: 67,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1474,7 +2270,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 60,
+                                                lineNumber: 73,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1482,7 +2278,7 @@ function About() {
                                                 children: "Electrical Design Lead"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 61,
+                                                lineNumber: 74,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1490,13 +2286,13 @@ function About() {
                                                 children: "Leader in power distribution, lighting and control system integration."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 62,
+                                                lineNumber: 75,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 59,
+                                        lineNumber: 72,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1508,7 +2304,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 65,
+                                                lineNumber: 78,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1516,7 +2312,7 @@ function About() {
                                                 children: "MEP Site Supervisor"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 66,
+                                                lineNumber: 79,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1524,13 +2320,13 @@ function About() {
                                                 children: "Ensures flawless installation and commissioning of all MEP systems."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 67,
+                                                lineNumber: 80,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 64,
+                                        lineNumber: 77,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1542,7 +2338,7 @@ function About() {
                                                 className: "h-48 w-full rounded-3xl object-cover mb-6"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 70,
+                                                lineNumber: 83,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1550,7 +2346,7 @@ function About() {
                                                 children: "Electrical Engineer"
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 71,
+                                                lineNumber: 84,
                                                 columnNumber: 15
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1558,41 +2354,41 @@ function About() {
                                                 children: "Manages digital coordination and clash detection across all building disciplines."
                                             }, void 0, false, {
                                                 fileName: "[project]/pages/about.js",
-                                                lineNumber: 72,
+                                                lineNumber: 85,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/pages/about.js",
-                                        lineNumber: 69,
+                                        lineNumber: 82,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/pages/about.js",
-                                lineNumber: 33,
+                                lineNumber: 46,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/pages/about.js",
-                        lineNumber: 28,
+                        lineNumber: 41,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/pages/about.js",
-                lineNumber: 11,
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ContactInfoPanel$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/about.js",
-                lineNumber: 77,
+                lineNumber: 90,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Footer$2e$js__$5b$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/pages/about.js",
-                lineNumber: 78,
+                lineNumber: 91,
                 columnNumber: 7
             }, this)
         ]

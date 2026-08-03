@@ -7,20 +7,33 @@ export default function About(){
   return (
     <div>
       <Navbar />
-      <Hero title="Who We Are" subtitle="We are an MEP consulting firm focused on performance and reliability. At Built Services Consult, we turn ambitious visions into reality with innovative engineering solutions tailored to each project's unique needs." centered />
-      <main>
+      <Hero
+        variant="about"
+        title="Engineering Partners Behind Smarter Buildings."
+        subtitle="We are an MEP consulting firm focused on performance and reliability. At Built Services Consult, we turn ambitious visions into reality with innovative engineering solutions tailored to each project's unique needs."
+        eyebrow="Who We Are"
+        cta={{href:'/contact', label:'Meet Our Team'}}
+        secondaryCta={{href:'/projects', label:'Our Projects'}}
+        stats={[
+          {value: '500', label: 'Projects Delivered', icon: 'projects'},
+          {value: '30+', label: 'Years Experience', icon: 'team'},
+          {value: '3', label: 'Countries Served', icon: 'globe'},
+          {value: '98%', label: 'Client Satisfaction', icon: 'award'}
+        ]}
+      />
+      <main className="pt-12 md:pt-16">
         <div className="container py-16">
           <div className="grid gap-10 lg:grid-cols-2">
             <div className="rounded-[2rem] bg-slate-950/95 border border-white/10 p-10 text-white shadow-xl shadow-slate-950/20">
               <p className="text-xs uppercase tracking-[0.32em] text-amber-400 mb-4">About Us</p>
-              <h2 className="text-3xl font-semibold mb-5">The Leading MEP Consulting Firm in Ghana</h2>
+              <h2 className="text-3xl font-semibold mb-5">A Leading MEP Consulting Firm in Ghana</h2>
               <p className="text-slate-300 leading-relaxed">Built Services Consult is a trusted Mechanical, Electrical and Plumbing (MEP) engineering consultancy with a proven track record of delivering high-quality and innovative engineering solutions across various sectors in Ghana and beyond. With over 30 years of experience, we provide HVAC, electrical, fire protection and plumbing engineering services for commercial, residential and institutional projects helping clients achieve efficient, sustainable and code-compliant developments.</p>
             </div>
 
             <div className="rounded-[2rem] bg-slate-950/95 border border-white/10 p-10 text-white shadow-xl shadow-slate-950/20">
               <p className="text-xs uppercase tracking-[0.32em] text-amber-400 mb-4">Our Strategy</p>
               <h2 className="text-3xl font-semibold mb-5">Integrated MEP Design from Concept to Completion</h2>
-              <p className="text-slate-300 leading-relaxed">We work alongside architcts, developers and contrctors to create coordinated mechanical, electrical and plumbing systems tailored to each project's specific needs. Through detailed engineering, tehnical expertise and collaborative begin every project by understanding the unique conditions and program requirements, then develop systems that respond to energy, comfort and operational goals. Our work is grounded in clear documentation, collaborative coordination and careful follow-through.</p>
+              <p className="text-slate-300 leading-relaxed">We work alongside architects, developers and contractors to create coordinated mechanical, electrical and plumbing systems tailored to each project's specific needs. Through detailed engineering, technical expertise and collaborative processes, we begin every project by understanding the unique conditions and program requirements, then develop systems that respond to energy, comfort and operational goals. Our work is grounded in clear documentation, collaborative coordination and careful follow-through.</p>
             </div>
           </div>
         </div>
