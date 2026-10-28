@@ -1,6 +1,16 @@
 {
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/_error": "pages/_error.js",
+  "/about": "pages/about.html",
+  "/contact": "pages/contact.html",
+  "/projects": "pages/projects.html",
+  "/projects/ashesi-university": "pages/projects/ashesi-university.html",
+  "/projects/digital-realty": "pages/projects/digital-realty.html",
+  "/projects/google-ghana": "pages/projects/google-ghana.html",
+  "/projects/icgc-christ-temple-east": "pages/projects/icgc-christ-temple-east.html",
+  "/projects/the-nova": "pages/projects/the-nova.html",
+  "/services": "pages/services.html",
+  "/404": "pages/404.html"
 }

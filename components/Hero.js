@@ -14,6 +14,7 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
   ]
   const [index, setIndex] = useState(0)
   const timerRef = useRef(null)
+  const syncStartRef = useRef(null)
 
   useEffect(()=>{
     if(disableAutoRotate) return
@@ -25,8 +26,11 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
       window.localStorage.setItem(HERO_SYNC_KEY, String(syncStart))
     }
 
+    syncStartRef.current = syncStart
+
     const updateIndex = ()=> {
-      const elapsed = Math.max(0, Date.now() - syncStart)
+      if(!syncStartRef.current) return
+      const elapsed = Math.max(0, Date.now() - syncStartRef.current)
       setIndex(Math.floor(elapsed / HERO_SLIDE_MS) % slides.length)
     }
 
@@ -34,7 +38,7 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
       if(event.key !== HERO_SYNC_KEY || !event.newValue) return
       const parsed = Number(event.newValue)
       if(!Number.isFinite(parsed) || parsed <= 0) return
-      syncStart = parsed
+      syncStartRef.current = parsed
       updateIndex()
     }
 
@@ -52,19 +56,14 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
     setIndex(i)
     if(disableAutoRotate) return
     if(typeof window === 'undefined') return
-    const syncStart = Date.now() - (i * HERO_SLIDE_MS)
-    window.localStorage.setItem(HERO_SYNC_KEY, String(syncStart))
+    const nextSyncStart = Date.now() - (i * HERO_SLIDE_MS)
+    syncStartRef.current = nextSyncStart
+    window.localStorage.setItem(HERO_SYNC_KEY, String(nextSyncStart))
   }
-
-  const heroStats = [
-    {value: '30+', label: 'Years Experience', icon: 'team'},
-    {value: '50+', label: 'Projects Delivered', icon: 'projects'},
-    {value: '50+', label: 'Happy Clients', icon: 'award'},
-    {value: '3', label: 'Countries Served', icon: 'globe'}
-  ]
 
   const currentSlide = String(index + 1).padStart(2, '0')
   const totalSlides = String(slides.length).padStart(2, '0')
+
   const titleParts = typeof title === 'string' ? title.split('. ') : []
   const hasSplitTitle = titleParts.length > 1
   const primaryTitle = hasSplitTitle ? `${titleParts[0]}.` : title
@@ -196,18 +195,6 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
               </div>
             </div>
           </div>
-
-          <div className="mt-3 rounded-2xl border border-slate-200/60 bg-white shadow-2xl shadow-slate-900/20 md:mt-4">
-            <div className={`grid grid-cols-2 ${aboutStats.length > 4 ? 'md:grid-cols-5' : 'md:grid-cols-4'}`}>
-              {aboutStats.map((stat, i)=> (
-                <div key={stat.label} className={`px-5 py-6 text-center ${i > 0 ? 'md:border-l md:border-slate-200' : ''} ${i % 2 === 1 ? 'border-l border-slate-200 md:border-l-0' : ''}`}>
-                  <div className="mx-auto mb-3 inline-flex h-10 w-10 items-center justify-center text-blue-600">{statIcon(stat.icon)}</div>
-                  <p className="text-4xl font-bold leading-none text-slate-900">{stat.value}</p>
-                  <p className="mt-2 text-xs font-medium text-slate-500">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
     )
@@ -255,18 +242,6 @@ export default function Hero({title, subtitle, cta, centered, variant, eyebrow, 
                 <span className="text-sm font-semibold tracking-[0.2em]">{totalSlides}</span>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div className="mb-1 rounded-2xl border border-white/10 bg-[#0a1734bf] backdrop-blur-md md:mb-2">
-          <div className="grid grid-cols-2 gap-0 md:grid-cols-4">
-            {heroStats.map((stat)=> (
-              <div key={stat.label} className="flex flex-col items-center justify-center px-4 py-4 text-center text-white even:border-l even:border-white/10 md:px-6 md:py-5 md:[&:not(:first-child)]:border-l md:[&:not(:first-child)]:border-white/10">
-                <div className="mb-2 inline-flex h-8 w-8 items-center justify-center text-blue-300">{statIcon(stat.icon)}</div>
-                <p className="text-2xl font-bold leading-none md:text-3xl">{stat.value}</p>
-                <p className="mt-2 text-xs uppercase tracking-[0.14em] text-white/75">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </div>
       </div>

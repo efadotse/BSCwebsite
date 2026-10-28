@@ -24,7 +24,7 @@ export default function Projects(){
         <section className="container py-20">
           <div className="text-center mb-16">
             <p className="text-xs uppercase tracking-[0.32em] text-amber-400 mb-4">Our Projects</p>
-            <h1 className="max-w-5xl mx-auto text-4xl md:text-5xl font-bold leading-tight">Every project we undertake reflects our commitment to engineering environments that perform, endure and inspire. From building services to large-scale infrastructure, our work delivers efficient, sustainable and future-ready MEP solutions shaped by technical excellence, integrity and lasting impact.
+            <h1 className="max-w-5xl mx-auto text-4xl md:text-5xl font-bold leading-tight">"Every project we undertake reflects our commitment to engineering environments that perform, endure and inspire. From building services to large-scale infrastructure, our work delivers efficient, sustainable and future-ready MEP solutions shaped by technical excellence, integrity and lasting impact."
             </h1>
           </div>
 

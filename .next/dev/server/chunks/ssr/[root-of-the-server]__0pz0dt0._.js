@@ -308,8 +308,8 @@ const stats = [
         label: 'Workstations, Offices & Collaboration Spaces'
     },
     {
-        value: 'LEED Gold',
-        label: 'Green Building Certification'
+        value: '100%',
+        label: 'Code & Standards Compliance'
     },
     {
         value: '100%',

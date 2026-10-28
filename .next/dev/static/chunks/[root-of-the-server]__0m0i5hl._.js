@@ -779,12 +779,12 @@ const stats = [
         label: 'Total Built-up Area'
     },
     {
-        value: 'LEED Gold',
-        label: 'Green Building Certification'
+        value: '100%',
+        label: 'Code & Standards Compliance'
     },
     {
-        value: '99.999%',
-        label: 'Designed Uptime'
+        value: '100%',
+        label: 'Client Satisfaction'
     }
 ];
 const scope = [

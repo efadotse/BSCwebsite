@@ -19,7 +19,7 @@ function DetailImage({ src, alt, fallback, className = '' }) {
 const stats = [
   { value: '500+ m²', label: 'Total Built-up Area' },
   { value: '10+', label: 'Workstations, Offices & Collaboration Spaces' },
-  { value: 'LEED Gold', label: 'Green Building Certification' },
+  { value: '100%', label: 'Code & Standards Compliance' },
   { value: '100%', label: 'Client Satisfaction' },
 ]
 
